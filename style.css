@@ -10,19 +10,90 @@
     --backgroundbtnlight: #8A6F6A;
     --preto:rgb(15, 0, 0); 
 } 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 html,body, section{
         color: var(--text);
-        background-color: var(--backgroundheaderrodape);
+        background-color: var(--bg);
 }
 
-html, body{
-    margin: 0;
-    padding: 0;
+
+.secao_vermelha{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--bg);
+    background-color: var(--rose);
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+    height: 50vh;
+    text-align: center;
+}
+.secao_bege{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--text);
+    background-color: var(--bg);
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+    height: 80vh;
+    padding: 300px 0px;
+}
+.emparelhamento{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+   justify-content: space-evenly;
+}
+.formulario{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+    padding: 20px;
+    background-color: var(--wire-light);
+    border-radius: 20px;
+}
+.formulario input{
+    text-align: center;
+    padding: 10px;
+    border: var(--wire) 1px solid;
+    border-radius: 20px;
+    width: 40vw;
+
+}
+.card{
+    background-color: var(--wire-light);
+    width: 35vmin;
+    height:20vmax;
+    border: #DBAD38 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+}
+.linha{
+    border: none;
+    border-radius: 10px;
+    height: 3px;
+    background-color: var(--dourado);
+    margin: 5px 0;
+    width: 80px;
 }
 header, footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 40px;
     align-items: center;
     background-color: var(--vermelho);
 
@@ -60,6 +131,11 @@ header button:hover, header a:hover{
     border-radius: 30px;
     padding: 10px;
 
+}
+#apadrinhar:hover{
+    background-color: var(--wire-light);
+    color: var(--preto);
+    transition: 0.3s;
 }
 li{
     display: inline;
@@ -144,4 +220,20 @@ header, footer{
     transform: scale(1.05);
     transition: 0.3s;
 
+}
+.carousel-item img {
+  max-height: 400px;
+  object-fit: cover;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecer 1s ease forwards;
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
