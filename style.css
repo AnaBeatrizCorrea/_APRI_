@@ -26,12 +26,15 @@ html,body, section{
     flex-direction: column;
     gap: 20px;
     color: var(--bg);
-    background-color: var(--rose);
+    background-color: var(--vermelho);
     align-items: center;
     justify-content: center;
     box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
-    height: 50vh;
+    height: 40vh;
     text-align: center;
+}
+.secao_vermelha h2 {
+    font-size: 40px;
 }
 .secao_bege{
     display: flex;
@@ -45,12 +48,27 @@ html,body, section{
     height: 80vh;
     padding: 300px 0px;
 }
-.emparelhamento{
+.cards{
     display: flex;
     flex-direction: row;
     gap: 50px;
    justify-content: space-evenly;
 }
+.botoes{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    padding-bottom: 10px;
+    background-color: var(--wire-light);
+}
+.secao_direita{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    background-color: var(--wire-light);
+}
+
 .formulario{
     display: flex;
     flex-direction: column; 
@@ -176,8 +194,8 @@ header, footer{
 }
 
 .btn-semcor{
-    background-color: var(--backgroundbtnlight);
-    border: none;
+    background-color: var(--bg);
+    border: 1px solid black;
     color: var(--text);
     padding: 10px 20px;
     text-decoration: none;
