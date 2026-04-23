@@ -41,7 +41,7 @@ html,body, section{
     flex-direction: column;
     gap: 20px;
     color: var(--text);
-    background-color: var(--bg);
+    background-color: var(--wire-light);
     align-items: center;
     justify-content: center;
     box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
@@ -53,6 +53,7 @@ html,body, section{
     flex-direction: row;
     gap: 50px;
    justify-content: space-evenly;
+   background-color: var(--wire-light);
 }
 .botoes{
     display: flex;
@@ -88,7 +89,7 @@ html,body, section{
 
 }
 .card{
-    background-color: var(--wire-light);
+    background-color: var(--bg);
     width: 35vmin;
     height:20vmax;
     border: #DBAD38 1px solid;
@@ -98,6 +99,7 @@ html,body, section{
     font-size: medium;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
 }
 .linha{
     border: none;
@@ -114,7 +116,11 @@ header, footer{
     gap: 40px;
     align-items: center;
     background-color: var(--vermelho);
-
+    color: var(--bg);
+    padding: 20px;
+}
+footer{
+    background-color: var(--borgonha);
 }
 
 footer img {
@@ -122,11 +128,19 @@ footer img {
 }
 
 header button, header a{
-    color: var(--text);
+    color: var(--bg);
     padding: 10px;
     text-decoration: none;
     border-radius: 15px;
 }
+i{
+    color: var(--dourado);
+}
+I:hover{
+    color: var(--ambar);
+    transition: 0.3s;
+}
+
 ul{
     font-family: "playfair-display", serif;
     display: flex;
@@ -166,9 +180,6 @@ h1{
     text-align: center;
 }
 
-header, footer{
-    padding: 20px;
-}
 .legenda{
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
