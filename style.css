@@ -30,8 +30,9 @@ html,body, section{
     align-items: center;
     justify-content: center;
     box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
-    height: 40vh;
+    min-height: 40vh;
     text-align: center;
+    padding: 20px;
 }
 .secao_vermelha h2 {
     font-size: 40px;
@@ -45,8 +46,9 @@ html,body, section{
     align-items: center;
     justify-content: center;
     box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
-    height: 80vh;
-    padding: 300px 0px;
+    min-height: 80vh;
+    padding: 80px 0;
+    text-align: center;
 }
 .cards{
     display: flex;
@@ -109,6 +111,13 @@ html,body, section{
     margin: 5px 0;
     width: 80px;
 }
+.caixa_texto{
+    font-family: "playfair-display", serif;
+    color: var(--text);
+    background-color: var(--wire-light);
+    padding: 10px 100px 10px 100px;
+    border-radius: 10px;
+}
 header, footer{
     display: flex;
     flex-direction: row;
@@ -118,11 +127,25 @@ header, footer{
     background-color: var(--vermelho);
     color: var(--bg);
     padding: 20px;
+    height: 10vh;
+}
+header img{
+    height: 50px;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 footer{
     background-color: var(--borgonha);
+    min-height: 70vh;
+    justify-content: space-between;
 }
-
+footer div{
+    display: flex;
+    flex-direction: column;
+}
 footer img {
     width: 75px;
 }
@@ -152,29 +175,27 @@ header button:hover, header a:hover{
     transition:0.5s;
     background-color: var(--wire-light);
     border-radius: 20px;
+    color: var(--preto);
 }
 
 #corpo{
     justify-items: center;
 }
 #apadrinhar {
-    background-color: var(--rose);
-    border: var(--wire-light) 2px solid;
+    background-color: var(--dourado);
     border-radius: 30px;
     padding: 10px;
-
+    border: none;
+    color: var(--text);
+    font-size: medium;
 }
 #apadrinhar:hover{
-    background-color: var(--wire-light);
+    background-color: var(--ambar);
     color: var(--preto);
     transition: 0.3s;
 }
 li{
     display: inline;
-}
-
-#logo{
-    width: 100px;
 }
 h1{
     text-align: center;
