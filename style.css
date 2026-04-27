@@ -275,3 +275,11 @@ h1{
     transform: translateY(0);
   }
 }
+
+#andamentos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    
+}
