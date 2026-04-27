@@ -8,7 +8,7 @@
     --wire-light: #E2D8D5;
     --text: #2A1A1A;
     --backgroundbtnlight: #8A6F6A;
-    --preto:rgb(15, 0, 0); 
+    --preto:rgb(15, 0, 0);
 } 
 *{
     padding: 0;
@@ -155,6 +155,8 @@ header, footer{
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
+    position: relative;
+    color: var(--bg);
 }
 
 .btn-dourado{
@@ -173,12 +175,13 @@ header, footer{
     background-color: var(--ambar);
     color: var(--text);
     transition: 0.3s;
+    border-color: var(--text);
 }
 
 .btn-semcor{
     background-color: var(--backgroundbtnlight);
     border: none;
-    color: var(--text);
+    color: var(--preto);
     padding: 10px 20px;
     text-decoration: none;
     display: inline-block;
@@ -197,12 +200,19 @@ header, footer{
     color: var(--ambar);
     padding: 20px 0 20px 0;
     background-color: var(--rose);
+    padding: 0px;
+
 }
 
 #projetos{
     font-size: 40px;
     background-color: var(--borgonha);
-}
+    height: 100px;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    border: 25p;
+} 
 .img-estante{
     width: 300px;
     height: 200px;
@@ -213,7 +223,6 @@ header, footer{
 #estante-fotos{
     display: flex;
     justify-content: center;
-    margin-top: 40px;
 }
 
 .img-estante:hover{
