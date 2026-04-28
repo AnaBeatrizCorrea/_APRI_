@@ -19,6 +19,7 @@
 html,body, section{
         color: var(--text);
         background-color: var(--bg);
+        font-family: "playfair-display", serif;
 }
 
 
@@ -122,6 +123,7 @@ header, footer{
 }
 footer{
     background-color: var(--borgonha);
+    font-family: "playfair-display", serif;
 }
 
 footer img {
@@ -143,7 +145,6 @@ I:hover{
 }
 
 ul{
-    font-family: "playfair-display", serif;
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -308,4 +309,11 @@ h1{
 }
 .cards-fotos{
     padding: 1%;
+}
+#contato{
+    gap: 20px;
+justify-items: center;
+h3{
+    margin: 2.5%;
+}
 }
