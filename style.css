@@ -9,7 +9,8 @@
     --text: #2A1A1A;
     --backgroundbtnlight: #8A6F6A;
     --preto:rgb(15, 0, 0);
-} 
+    --bg_opaci: rgb(245, 240, 238, 0.5);
+}   
 *{
     padding: 0;
     margin: 0;
@@ -201,7 +202,7 @@ h1{
 }
 
 .btn-dourado:hover{
-    background-color: var(--ambar);
+    zoom: 110%;
     color: var(--text);
     transition: 0.3s;
     border-color: var(--text);
@@ -226,27 +227,24 @@ h1{
 
 #corpo-projetos{
     font-family: "playfair-display", serif;
-    color: var(--ambar);
-    padding: 20px 0 20px 0;
-    background-color: var(--rose);
-    padding: 0px;
-
+    color: var(--borgonha);
 }
 
 #projetos{
+    gap: 10%;
     font-size: 40px;
-    background-color: var(--borgonha);
-    height: 100px;
+    background-color: var(--bg);
+    height: 6rem;
     display: flex;  
     align-items: center;
     justify-content: center;
-    border: 25p;
 } 
 .img-estante{
-    width: 300px;
+    width: 90%;
     height: 200px;
     border-radius: 10px;
-    margin: 5px;
+    margin: 1%;
+
 }
 
 #estante-fotos{
@@ -254,11 +252,6 @@ h1{
     justify-content: center;
 }
 
-.img-estante:hover{
-    transform: scale(1.05);
-    transition: 0.3s;
-
-}
 .carousel-item img {
   max-height: 400px;
   object-fit: cover;
@@ -281,5 +274,38 @@ h1{
     flex-direction: row;
     justify-content: center;
     gap: 10%;
-    
+    padding: 5%;
+    background-color: var(--vermelho);
+}
+
+#andamentos div{
+    text-align: center;
+}
+
+#edificios_icon, #patrono_icon, #valor_icon, #projetos_icon {
+    font-size: 200%;
+}
+
+#header_inicio{
+    background-color: var(--vermelho);
+}
+.btn-opaci{
+    border: 1px solid #000000;
+    color: var(--wire-light);
+    text-decoration: solid;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 40px;
+    background-color: transparent;
+}
+.btn-opaci:hover{
+    background-color: var(--bg_opaci);
+    color: var(--preto);
+    zoom: 110%;
+}
+.cards-fotos{
+    padding: 1%;
 }
