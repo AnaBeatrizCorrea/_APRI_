@@ -10,6 +10,9 @@
     --backgroundbtnlight: #8A6F6A;
     --preto:rgb(15, 0, 0); 
 } 
+body{
+            font-family: "Playfair Display", serif;
+        }
 *{
     padding: 0;
     margin: 0;
@@ -19,7 +22,15 @@ html,body, section{
         color: var(--text);
         background-color: var(--bg);
 }
+.texto1{
+    color: var(--wire);
+    width: 50%;
+    
+}
 
+.titulo1{
+    font-size: 2.5rem;
+}
 
 .secao_vermelha{
     display: flex;
@@ -44,17 +55,38 @@ html,body, section{
     color: var(--text);
     background-color: var(--wire-light);
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
-    min-height: 80vh;
+    min-height: 200vh;
     padding: 80px 0;
     text-align: center;
+}
+.linha{
+    border: none;
+    border-radius: 10px;
+    height: 3px;
+    background-color: var(--dourado);
+    margin: 5px 0;
+    width: 80px;
+}
+.card{
+    background-color: var(--bg);
+    width: 55vmin;
+    height:30vmax;
+    border: #DBAD38 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
 }
 .cards{
     display: flex;
     flex-direction: row;
     gap: 50px;
-   justify-content: space-evenly;
+    justify-content: space-evenly;
    background-color: var(--wire-light);
 }
 .botoes{
@@ -102,27 +134,8 @@ html,body, section{
     margin: 10px auto;
     width: 80%;
 }
-.card{
-    background-color: var(--bg);
-    width: 35vmin;
-    height:20vmax;
-    border: #DBAD38 1px solid;
-    border-radius: 10px;
-    text-align: center;
-    justify-content: space-evenly;
-    font-size: medium;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
-}
-.linha{
-    border: none;
-    border-radius: 10px;
-    height: 3px;
-    background-color: var(--dourado);
-    margin: 5px 0;
-    width: 80px;
-}
+
+
 .caixa_texto{
     font-family: "playfair-display", serif;
     color: var(--text);
@@ -130,6 +143,141 @@ html,body, section{
     padding: 10px 100px 10px 100px;
     border-radius: 10px;
 }
+.carousel-wrapper {
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .carousel-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+
+    .carousel-header h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #111;
+    }
+
+    /* ── Botões prev/next ── */
+    .carousel-controls {
+      display: flex;
+      gap: 8px;
+    }
+
+    .ctrl-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid #ddd;
+      background: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+    }
+
+    .ctrl-btn:hover { background: #f0f0f0; }
+    .ctrl-btn:disabled { opacity: 0.3; cursor: default; }
+
+    /* ── Viewport (máscara) ── */
+    .carousel-viewport {
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    /* ── Trilha deslizante ── */
+    .carousel-track {
+      display: flex;
+      gap: 16px;
+      transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      will-change: transform;
+    }
+
+    /* ── Cards ── */
+    .card {
+      flex: 0 0 calc(33.333% - 11px); /* 3 visíveis por vez */
+      background: #fff;
+      border-radius: 12px;
+      border: 1px solid #e5e5e5;
+      padding: 1.25rem;
+      min-width: 0;
+    }
+
+    .card-img {
+      width: 100%;
+      height: 140px;
+      border-radius: 8px;
+      background: #e8eaf6;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+    }
+
+    .card-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 99px;
+      background: #ede7f6;
+      color: #4527a0;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .card h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #111;
+      margin-bottom: 4px;
+    }
+
+    .card p {
+      font-size: 0.85rem;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    /* ── Dots ── */
+    .carousel-dots {
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+      margin-top: 1rem;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 99px;
+      background: #ccc;
+      cursor: pointer;
+      transition: background 0.2s, width 0.25s;
+      border: none;
+    }
+
+    .dot.active {
+      background: #333;
+      width: 22px;
+    }
+
+    /* ── Responsivo: 1 card no mobile ── */
+    @media (max-width: 600px) {
+      .card { flex: 0 0 100%; }
+    }
+
+    /* ── Responsivo: 2 cards no tablet ── */
+    @media (min-width: 601px) and (max-width: 860px) {
+      .card { flex: 0 0 calc(50% - 8px); }
+    }
 header, footer{
     display: flex;
     flex-direction: row;
