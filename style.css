@@ -27,39 +27,63 @@ html,body, section{
     width: 50%;
     
 }
+.texto2{
+    color: var(--text);
+    margin-bottom: 30px;
+}
 
 .titulo1{
     font-size: 2.5rem;
+    color: var(--bg);
+}
+.titulo2{
+    font-size: 2.0rem;
+    color: var(--borgonha);
+}
+.titulo3{
+    font-size: 1.5rem;
+    color: var(--borgonha);
 }
 
 .secao_vermelha{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    color: var(--bg);
     background-color: var(--vermelho);
     align-items: center;
     justify-content: center;
     box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
-    min-height: 40vh;
+    min-height: 50vh;
     text-align: center;
     padding: 20px;
 }
 .secao_vermelha h2 {
     font-size: 40px;
 }
-.secao_bege{
+.secao_bege1{
     display: flex;
     flex-direction: column;
     gap: 20px;
     color: var(--text);
-    background-color: var(--wire-light);
+    background-color: var(--bg);
     align-items: center;
     justify-content: start;
     box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
     min-height: 200vh;
     padding: 80px 0;
     text-align: center;
+}
+.secao_bege2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--wire-light);
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+    min-height: 70vh;
+    text-align: center;
+    padding: 20px;
 }
 .linha{
     border: none;
@@ -69,25 +93,50 @@ html,body, section{
     margin: 5px 0;
     width: 80px;
 }
-.card{
+.card1{
     background-color: var(--bg);
-    width: 55vmin;
-    height:30vmax;
+    width: 65vmin;
+    height: fit-content;
     border: #DBAD38 1px solid;
     border-radius: 10px;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: start;
     font-size: medium;
     display: flex;
     flex-direction: column;
     box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    gap: 20px;
 }
+.card1 img{
+    width: 100%;
+    height: 35%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
 .cards{
     display: flex;
     flex-direction: row;
     gap: 50px;
     justify-content: space-evenly;
-   background-color: var(--wire-light);
+}
+.btn-dourado{
+    background-color: var(--dourado);
+    border: none;
+    color: var(--text);
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px;
+    border-radius: 30px;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn-dourado:hover{
+    filter: brightness(110%);
+    transition: 0.3s;
 }
 .botoes{
     display: flex;
@@ -95,7 +144,7 @@ html,body, section{
     gap: 15px;
     justify-content: center;
     padding-bottom: 10px;
-    background-color: var(--wire-light);
+    background-color: var(--dourado);
 }
 .secao_direita{
     display: flex;
@@ -377,23 +426,7 @@ h1{
     border-radius: 10px;
 }
 
-.btn-dourado{
-    background-color: var(--dourado);
-    border: none;
-    color: var(--text);
-    padding: 10px 20px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 10px;
-    border-radius: 30px;
-}
 
-.btn-dourado:hover{
-    background-color: var(--ambar);
-    color: var(--text);
-    transition: 0.3s;
-}
 
 .btn-semcor{
     background-color: var(--bg);
