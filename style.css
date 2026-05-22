@@ -44,7 +44,74 @@ html,body, section{
     font-size: 1.5rem;
     color: var(--borgonha);
 }
+header, footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    background-color: var(--vermelho);
+    color: var(--bg);
+    padding: 20px;
+    height: 10vh;
+}
+header img{
+    height: 50px;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+footer{
+    background-color: var(--borgonha);
+    min-height: 60vh;
+    color: var(--wire);
+    justify-content: space-between;
+}
+footer h2{
+    color: var(--dourado);
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 50px;
+    padding: 0;
+    gap: 10px;
+}
+footer img {
+    width: 75px;
+}
 
+header button, header a{
+    color: var(--bg);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+footer a{
+    color: var(--wire);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 15px;
+    width: fit-content;
+}
+
+
+ul{
+    font-family: "playfair-display", serif;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+header button:hover, header a:hover{
+    transition:0.5s;
+    background-color: var(--dourado);
+    border-radius: 20px;
+    color: var(--preto);
+}
 .secao_vermelha{
     display: flex;
     flex-direction: column;
@@ -327,74 +394,7 @@ html,body, section{
     @media (min-width: 601px) and (max-width: 860px) {
       .card { flex: 0 0 calc(50% - 8px); }
     }
-header, footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 40px;
-    align-items: center;
-    background-color: var(--vermelho);
-    color: var(--bg);
-    padding: 20px;
-    height: 10vh;
-}
-header img{
-    height: 50px;
-}
-header{
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-footer{
-    background-color: var(--borgonha);
-    min-height: 70vh;
-    color: var(--wire);
-    justify-content: space-between;
-}
-footer h2{
-    color: var(--dourado);
-}
-footer div{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    margin: 50px;
-    padding: 0;
-    gap: 10px;
-}
-footer img {
-    width: 75px;
-}
 
-header button, header a{
-    color: var(--bg);
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 15px;
-}
-footer a{
-    color: var(--wire);
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 15px;
-    width: fit-content;
-}
-
-
-ul{
-    font-family: "playfair-display", serif;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-
-header button:hover, header a:hover{
-    transition:0.5s;
-    background-color: var(--dourado);
-    border-radius: 20px;
-    color: var(--preto);
-}
 
 #corpo{
     justify-items: center;
