@@ -9,8 +9,7 @@
     --text: #2A1A1A;
     --backgroundbtnlight: #8A6F6A;
     --preto:rgb(15, 0, 0);
-    --bg_opaci: rgb(245, 240, 238, 0.5);
-}   
+} 
 *{
     padding: 0;
     margin: 0;
@@ -19,8 +18,8 @@
 html,body, section{
         color: var(--text);
         background-color: var(--bg);
-        font-family: "playfair-display", serif;
 }
+
 
 .secao_vermelha{
     display: flex;
@@ -31,8 +30,9 @@ html,body, section{
     align-items: center;
     justify-content: center;
     box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
-    height: 40vh;
+    min-height: 40vh;
     text-align: center;
+    padding: 20px;
 }
 .secao_vermelha h2 {
     font-size: 40px;
@@ -46,8 +46,9 @@ html,body, section{
     align-items: center;
     justify-content: center;
     box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
-    height: 80vh;
-    padding: 300px 0px;
+    min-height: 80vh;
+    padding: 80px 0;
+    text-align: center;
 }
 .cards{
     display: flex;
@@ -89,6 +90,18 @@ html,body, section{
     width: 40vw;
 
 }
+#direitos{
+    background-color: var(--borgonha);
+    color: var(--wire);
+    text-align: center;
+    padding: 10px;
+}
+#direitos hr{
+    border: none;
+    border-top: 1px solid var(--wire);
+    margin: 10px auto;
+    width: 80%;
+}
 .card{
     background-color: var(--bg);
     width: 35vmin;
@@ -110,6 +123,13 @@ html,body, section{
     margin: 5px 0;
     width: 80px;
 }
+.caixa_texto{
+    font-family: "playfair-display", serif;
+    color: var(--text);
+    background-color: var(--wire-light);
+    padding: 10px 100px 10px 100px;
+    border-radius: 10px;
+}
 header, footer{
     display: flex;
     flex-direction: row;
@@ -119,12 +139,33 @@ header, footer{
     background-color: var(--vermelho);
     color: var(--bg);
     padding: 20px;
+    height: 10vh;
+}
+header img{
+    height: 50px;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 footer{
     background-color: var(--borgonha);
-    font-family: "playfair-display", serif;
+    min-height: 70vh;
+    color: var(--wire);
+    justify-content: space-between;
 }
-
+footer h2{
+    color: var(--dourado);
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 50px;
+    padding: 0;
+    gap: 10px;
+}
 footer img {
     width: 75px;
 }
@@ -135,15 +176,17 @@ header button, header a{
     text-decoration: none;
     border-radius: 15px;
 }
-i{
-    color: var(--dourado);
-}
-I:hover{
-    color: var(--ambar);
-    transition: 0.3s;
+footer a{
+    color: var(--wire);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 15px;
+    width: fit-content;
 }
 
+
 ul{
+    font-family: "playfair-display", serif;
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -151,35 +194,34 @@ ul{
 
 header button:hover, header a:hover{
     transition:0.5s;
-    background-color: var(--wire-light);
+    background-color: var(--dourado);
     border-radius: 20px;
+    color: var(--preto);
 }
 
 #corpo{
     justify-items: center;
 }
 #apadrinhar {
-    background-color: var(--rose);
-    border: var(--wire-light) 2px solid;
+    background-color: var(--dourado);
     border-radius: 30px;
     padding: 10px;
-
+    border: none;
+    color: var(--text);
+    font-size: medium;
 }
 #apadrinhar:hover{
-    background-color: var(--wire-light);
+    background-color: var(--ambar);
     color: var(--preto);
     transition: 0.3s;
 }
 li{
     display: inline;
 }
-
-#logo{
-    width: 100px;
-}
 h1{
     text-align: center;
 }
+
 
 .legenda{
     background-color: rgba(0, 0, 0, 0.5);
@@ -202,7 +244,7 @@ h1{
 }
 
 .btn-dourado:hover{
-    zoom: 110%;
+    background-color: var(--ambar);
     color: var(--text);
     transition: 0.3s;
     border-color: var(--text);
@@ -227,24 +269,27 @@ h1{
 
 #corpo-projetos{
     font-family: "playfair-display", serif;
-    color: var(--borgonha);
+    color: var(--ambar);
+    padding: 20px 0 20px 0;
+    background-color: var(--rose);
+    padding: 0px;
+
 }
 
 #projetos{
-    gap: 10%;
     font-size: 40px;
-    background-color: var(--bg);
-    height: 6rem;
+    background-color: var(--borgonha);
+    height: 100px;
     display: flex;  
     align-items: center;
     justify-content: center;
+    border: 25p;
 } 
 .img-estante{
-    width: 90%;
+    width: 300px;
     height: 200px;
     border-radius: 10px;
-    margin: 1%;
-
+    margin: 5px;
 }
 
 #estante-fotos{
@@ -252,6 +297,11 @@ h1{
     justify-content: center;
 }
 
+.img-estante:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+
+}
 .carousel-item img {
   max-height: 400px;
   object-fit: cover;
@@ -267,65 +317,4 @@ h1{
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-#andamentos{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10%;
-    padding: 5%;
-    background-color: var(--vermelho);
-}
-
-#andamentos div{
-    text-align: center;
-}
-
-#edificios_icon, #patrono_icon, #valor_icon, #projetos_icon {
-    font-size: 200%;
-}
-
-#header_inicio{
-    background-color: var(--vermelho);
-}
-.btn-opaci{
-    border: 1px solid #000000;
-    color: var(--wire-light);
-    text-decoration: solid;
-    padding: 10px 20px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 10px;
-    border-radius: 40px;
-    background-color: transparent;
-}
-.btn-opaci:hover{
-    background-color: var(--bg_opaci);
-    color: var(--preto);
-    zoom: 110%;
-}
-.cards-fotos{
-    padding: 1%;
-}
-#contato{
-    gap: 20px;
-justify-items: center;
-h3{
-    margin: 2.5%;
-}
-}
-.link-cards-projetos, #Licks{
-    text-decoration: none;
-    color: var(--text);
-}
-#Licks{
-    color: var(--wire-light);
-}
-.link-cards-projetos:hover{
-    color: var(--dourado);
-    transition: 0.3s;
-    zoom: 110%;
-
 }
