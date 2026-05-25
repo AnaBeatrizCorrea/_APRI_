@@ -22,7 +22,6 @@ html,body, section{
         font-family: "playfair-display", serif;
 }
 
-
 .secao_vermelha{
     display: flex;
     flex-direction: column;
@@ -316,4 +315,17 @@ justify-items: center;
 h3{
     margin: 2.5%;
 }
+}
+.link-cards-projetos, #Licks{
+    text-decoration: none;
+    color: var(--text);
+}
+#Licks{
+    color: var(--wire-light);
+}
+.link-cards-projetos:hover{
+    color: var(--dourado);
+    transition: 0.3s;
+    zoom: 110%;
+
 }
