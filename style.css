@@ -45,15 +45,18 @@ html,body, section{
     color: var(--borgonha);
 }
 header, footer{
+    font-family: "lato", sans-serif;
+    letter-spacing: 0.03em;
+    font-weight: 400;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 40px;
     align-items: center;
     background-color: var(--vermelho);
-    color: var(--wire);
+    color: var(--backgroundbtnlight);
     padding: 20px;
-    height: 10vh;
+    height: 64px;
 }
 header img{
     height: 50px;
@@ -89,7 +92,7 @@ header button, header a{
     color: var(--bg);
     padding: 10px;
     text-decoration: none;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 li{
     list-style: none;
@@ -104,7 +107,7 @@ footer a{
 
 
 ul{
-    font-family: "playfair-display", serif;
+    font-size: 13.28px;
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -114,10 +117,18 @@ header button:hover, header a:hover{
     cursor: pointer;
 }
 .ativa{
-    text-decoration: underline 10px var(--dourado);
-    text-decoration-thickness: 2px; 
-    text-underline-offset: 5px;
+  position: relative;
+  color: var(--dourado);
+}
 
+.ativa::after{
+  content: "";
+  position: absolute;
+  left: -3px;
+  right: -3px;
+  bottom: 0px;
+  height: 2px;
+  background: var(--dourado);
 }
 .secao_vermelha{
     display: flex;
