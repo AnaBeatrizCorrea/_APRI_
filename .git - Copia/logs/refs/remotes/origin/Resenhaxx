@@ -1,0 +1,5 @@
+0e73c60a9aab7dc217c34d514c7901b84a6f5488 c35dc4888adb380843ea7c4a6651c2bb4a6bc18a Alunos <> 1776980118 -0300	fetch --progress --prune --recurse-submodules=on-demand origin: fast-forward
+c35dc4888adb380843ea7c4a6651c2bb4a6bc18a 7245bef98c9039d716e540f6c9dd7c1cb2922231 AnaBeatrizCorrea <annninnha20@gmail.com> 1779750244 -0300	fetch: fast-forward
+7245bef98c9039d716e540f6c9dd7c1cb2922231 cf6de82842efc8f1455a58ccd8ca0974a72502ac AnaBeatrizCorrea <annninnha20@gmail.com> 1779750717 -0300	pull --ff --recurse-submodules --progress origin: fast-forward
+cf6de82842efc8f1455a58ccd8ca0974a72502ac 7fa7de3a44216d399a52620710753ac57b72f875 AnaBeatrizCorrea <annninnha20@gmail.com> 1779830935 -0300	fetch --progress --prune --recurse-submodules=on-demand origin: fast-forward
+7fa7de3a44216d399a52620710753ac57b72f875 ed6716e5ec52810eb49169f32b19c11595b39e08 AnaBeatrizCorrea <annninnha20@gmail.com> 1779836207 -0300	fetch --progress --prune --recurse-submodules=on-demand origin: fast-forward
