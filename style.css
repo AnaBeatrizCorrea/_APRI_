@@ -1,4 +1,4 @@
-:root{ --vermelho: #A62D37;
+﻿:root{ --vermelho: #A62D37;
     --rose: #A64951;
     --dourado: #DBAD38;
     --ambar: #D98B48;
@@ -182,7 +182,7 @@ header button:hover, header a:hover{
     width: 80px;
 }
 .card1{
-    background-color: var(--bg);
+    background-color: white;
     height: fit-content;
     width: fit-content;
     max-width: 75%;
@@ -197,6 +197,40 @@ header button:hover, header a:hover{
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     gap: 20px;
 }
+.card2{
+    background-color: var(--wire-light);
+    height: fit-content;
+    width: fit-content;
+    max-width: 75%;
+    margin: 10px;
+    border: #DBAD38 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: start;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    gap: 20px;
+}
+
+.card3{
+    background-color:white;
+    height: fit-content;
+    width: fit-content;
+    max-width: 75%;
+    margin: 10px;
+    border: rgba(135, 66, 66, 0.718) 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: start;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    gap: 20px;
+}
+
 .card1 img{
     width: 100%;
     height: 35%;
@@ -210,6 +244,29 @@ header button:hover, header a:hover{
     flex-direction: row;
     gap: 50px;
     justify-content: space-evenly;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    width: 30vw;
+}
+.formulario label{
+    font-size: 18px;
+    color: var(--text);
+}
+.formulario input, .formulario textarea{
+    border: 1px solid var(--dourado);
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 14px;
+    color: var(--text);
+    background-color: transparent;
+    width: 80%;
 }
 .btn-dourado{
     background-color: var(--rose);
@@ -236,6 +293,12 @@ header button:hover, header a:hover{
     border-radius: 30px;
     transition: all 0.4s ease-in-out;
 }
+.space_between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+}
 button:hover{
     filter: brightness(110%);
     cursor: pointer;
@@ -251,7 +314,7 @@ button:hover{
     gap: 15px;
     justify-content: center;
     padding-bottom: 10px;
-    background-color: var(--dourado);
+    
 }
 .secao_direita{
     display: flex;
