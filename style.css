@@ -25,24 +25,28 @@ html,body, section{
 .texto1{
     color: var(--wire);
     width: 50%;
-    
+    margin: 20px;
 }
 .texto2{
     color: var(--text);
-    margin-bottom: 30px;
+    margin: 20px;
+
 }
 
 .titulo1{
     font-size: 2.5rem;
     color: var(--bg);
+    margin: 20px;
 }
 .titulo2{
     font-size: 2.0rem;
     color: var(--borgonha);
+    margin: 10px;
 }
 .titulo3{
     font-size: 1.5rem;
     color: var(--borgonha);
+    margin: 10px;
 }
 header, footer{
     font-family: "lato", sans-serif;
@@ -182,7 +186,6 @@ header button:hover, header a:hover{
     height: fit-content;
     width: fit-content;
     max-width: 75%;
-    padding: 20px;
     margin: 10px;
     border: #DBAD38 1px solid;
     border-radius: 10px;
@@ -223,7 +226,14 @@ header button:hover, header a:hover{
 .btn2{
     background-color: var(--vermelho);
     border: solid 1.3px var(--dourado);
+    color: var(--wire-light);
     font-weight: 600;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px;
+    border-radius: 30px;
     transition: all 0.4s ease-in-out;
 }
 button:hover{
@@ -250,38 +260,6 @@ button:hover{
     background-color: var(--wire-light);
 }
 
-.formulario{
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    gap: 20px;
-    width: 80%;
-    padding: 20px;
-    background-color: var(--wire-light);
-    border-radius: 20px;
-}
-.formulario input{
-    text-align: center;
-    padding: 10px;
-    border: var(--wire) 1px solid;
-    border-radius: 20px;
-    width: 40vw;
-
-}
-#direitos{
-    background-color: var(--borgonha);
-    color: var(--wire);
-    text-align: center;
-    padding: 10px;
-}
-#direitos hr{
-    border: none;
-    border-top: 1px solid var(--wire);
-    margin: 10px auto;
-    width: 80%;
-}
-
-
 .caixa_texto{
     font-family: "playfair-display", serif;
     color: var(--text);
@@ -289,131 +267,6 @@ button:hover{
     padding: 10px 100px 10px 100px;
     border-radius: 10px;
 }
-.carousel-wrapper {
-      width: 100%;
-      max-width: 900px;
-    }
-
-    .carousel-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 1rem;
-    }
-
-    .carousel-header h2 {
-      font-size: 1.2rem;
-      font-weight: 600;
-      color: #111;
-    }
-
-    /* ── Botões prev/next ── */
-    .carousel-controls {
-      display: flex;
-      gap: 8px;
-    }
-
-    .ctrl-btn {
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      border: 1px solid #ddd;
-      background: #fff;
-      font-size: 1rem;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background 0.2s;
-    }
-
-    .ctrl-btn:hover { background: #f0f0f0; }
-    .ctrl-btn:disabled { opacity: 0.3; cursor: default; }
-
-    /* ── Viewport (máscara) ── */
-    .carousel-viewport {
-      overflow: hidden;
-      border-radius: 12px;
-    }
-
-    /* ── Trilha deslizante ── */
-    .carousel-track {
-      display: flex;
-      gap: 16px;
-      transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-      will-change: transform;
-    }
-
-    /* ── Cards ── */
-    .card {
-      flex: 0 0 calc(33.333% - 11px); /* 3 visíveis por vez */
-      background: #fff;
-      border-radius: 12px;
-      border: 1px solid #e5e5e5;
-      padding: 1.25rem;
-      min-width: 0;
-    }
-
-    .card-img {
-      width: 100%;
-      height: 140px;
-      border-radius: 8px;
-      background: #e8eaf6;
-      margin-bottom: 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2.5rem;
-    }
-
-    .card-tag {
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 600;
-      padding: 3px 10px;
-      border-radius: 99px;
-      background: #ede7f6;
-      color: #4527a0;
-      margin-bottom: 8px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    .card h3 {
-      font-size: 1rem;
-      font-weight: 600;
-      color: #111;
-      margin-bottom: 4px;
-    }
-
-    .card p {
-      font-size: 0.85rem;
-      color: #666;
-      line-height: 1.5;
-    }
-
-    /* ── Dots ── */
-    .carousel-dots {
-      display: flex;
-      justify-content: center;
-      gap: 6px;
-      margin-top: 1rem;
-    }
-
-    .dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 99px;
-      background: #ccc;
-      cursor: pointer;
-      transition: background 0.2s, width 0.25s;
-      border: none;
-    }
-
-    .dot.active {
-      background: #333;
-      width: 22px;
-    }
 
     /* ── Responsivo: 1 card no mobile ── */
     @media (max-width: 600px) {
@@ -428,12 +281,6 @@ button:hover{
 
 
 
-
-
-.carousel-item img {
-  max-height: 400px;
-  object-fit: cover;
-}
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
