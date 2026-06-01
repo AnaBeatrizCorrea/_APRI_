@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Administrativo | APRI</title>
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="shortcut icon"
+        href="/imagens/favicon.png"
+        type="image/x-icon">
+</head>
+<body>
+
+    <section class="admin-header">
+
+        <div class="space_between">
+
+            <div>
+                <h1 class="admin-title">
+                    Painel Administrativo
+                </h1>
+
+                <hr class="linha">
+
+                <p class="admin-subtitle">
+                    Gerenciamento de conteúdos do site
+                </p>
+            </div>
+
+            <div>
+                <button class="btn-admin">
+                    <i class="bi bi-box-arrow-right"></i>
+                    Sair
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <nav class="admin-tabs">
+
+        <button class="tab active">
+            <i class="bi bi-file-earmark-text"></i>
+            Conteúdos
+        </button>
+
+        <button class="tab">
+            <i class="bi bi-book"></i>
+            Cursos
+        </button>
+
+        <button class="tab">
+            <i class="bi bi-briefcase"></i>
+            Projetos
+        </button>
+
+        <button class="tab">
+            <i class="bi bi-people"></i>
+            Gestão de Associados
+        </button>
+
+    </nav>
+
+    <main class="admin-container">
+
+        <div class="admin-topbar">
+
+            <h2>Gerenciar Conteúdos</h2>
+
+            <button class="btn-add">
+                <i class="bi bi-plus-lg"></i>
+                Adicionar Conteúdo
+            </button>
+
+        </div>
+
+        <div class="admin-list">
+
+            <div class="content-card">
+
+                <div>
+
+                    <h3>
+                        Manual de Preservação do Patrimônio
+                    </h3>
+
+                    <div class="content-info">
+
+                        <span>Artigo</span>
+
+                        <span>•</span>
+
+                        <span class="published">
+                            Publicado
+                        </span>
+
+                        <span>•</span>
+
+                        <span>Mar 2026</span>
+
+                    </div>
+
+                </div>
+
+                <div class="actions">
+
+                    <button>
+                        <i class="bi bi-pencil"></i>
+                    </button>
+
+                    <button>
+                        <i class="bi bi-trash"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="content-card">
+
+                <div>
+
+                    <h3>
+                        História Arquitetônica de Itu
+                    </h3>
+
+                    <div class="content-info">
+
+                        <span>Livro</span>
+
+                        <span>•</span>
+
+                        <span class="published">
+                            Publicado
+                        </span>
+
+                        <span>•</span>
+
+                        <span>Jan 2026</span>
+
+                    </div>
+
+                </div>
+
+                <div class="actions">
+
+                    <button>
+                        <i class="bi bi-pencil"></i>
+                    </button>
+
+                    <button>
+                        <i class="bi bi-trash"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="content-card">
+
+                <div>
+
+                    <h3>
+                        Relatório Anual 2025
+                    </h3>
+
+                    <div class="content-info">
+
+                        <span>Relatório</span>
+
+                        <span>•</span>
+
+                        <span class="draft">
+                            Rascunho
+                        </span>
+
+                        <span>•</span>
+
+                        <span>Dez 2025</span>
+
+                    </div>
+
+                </div>
+
+                <div class="actions">
+
+                    <button>
+                        <i class="bi bi-pencil"></i>
+                    </button>
+
+                    <button>
+                        <i class="bi bi-trash"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

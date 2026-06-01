@@ -587,3 +587,183 @@ button:hover{
     transition: 0.3s;
 
 }
+
+.admin-header {
+    background: var(--vermelho);
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.admin-title {
+    color: white;
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+.admin-subtitle {
+    color: var(--bg);
+    margin-top: 15px;
+}
+
+.btn-admin {
+    background: var(--dourado);
+    border: none;
+    border-radius: 30px;
+    padding: 12px 24px;
+    font-weight: 600;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.admin-tabs {
+    background: #eee5df;
+    border-top: 1px solid #d7c8c1;
+    border-bottom: 1px solid #d7c8c1;
+
+    display: flex;
+    gap: 15px;
+
+    padding: 18px 60px;
+}
+
+.tab {
+    background: white;
+    border: 2px solid #d6cbc5;
+
+    padding: 14px 25px;
+
+    border-radius: 999px;
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    font-weight: 600;
+    color: var(--borgonha);
+
+    transition: .3s;
+}
+
+.tab:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+.tab.active {
+    background: var(--dourado);
+    border-color: var(--dourado);
+    color: black;
+}
+
+
+.admin-container {
+    padding: 60px;
+}
+
+.admin-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 40px;
+}
+
+.admin-topbar h2 {
+    font-size: 3rem;
+    color: var(--borgonha);
+    font-weight: normal;
+}
+
+.btn-add {
+    background: var(--dourado);
+    border: none;
+
+    border-radius: 999px;
+
+    padding: 14px 24px;
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    font-weight: 600;
+}
+
+
+.admin-list {
+    background: white;
+
+    border: 1px solid #e2d8d5;
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,.08);
+}
+
+.content-card {
+    background: #eee5df;
+
+    border-radius: 16px;
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 18px;
+}
+
+.content-card:last-child {
+    margin-bottom: 0;
+}
+
+.content-card h3 {
+    color: var(--borgonha);
+    margin-bottom: 10px;
+}
+
+.content-info {
+    display: flex;
+    gap: 12px;
+    color: #7f8790;
+    font-size: .95rem;
+}
+
+.published {
+    color: #22a34b;
+}
+
+.draft {
+    color: #ff9900;
+}
+
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.actions button {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    border: none;
+
+    background: #f3d7cf;
+
+    color: #d84b4b;
+
+    font-size: 1rem;
+}
+
+.actions button:hover {
+    transform: scale(1.08);
+}
