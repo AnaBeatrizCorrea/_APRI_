@@ -217,6 +217,7 @@ header button:hover, header a:hover{
 }
 .card1 img{
     width: 100%;
+    max-width: fit-content;
     height: 35%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
