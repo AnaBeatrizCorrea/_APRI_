@@ -867,8 +867,9 @@ footer.sobre-footer a {
 .as-card-icon.receita    { color: #dbad38; font-size: 50px;}
 .as-card-icon.assembleia { color: #A62D37; font-size: 50px;}
 
-.container-bege{
-  background-color: #C4B5B0;
+.as-container-bege{
+  background-color: #c4b5b0;
+  min-height: 200px;
 }
 
 .as-doc-grid {
@@ -919,7 +920,7 @@ footer.sobre-footer a {
 }
 
 .as-doc-date {
-  font-size: 15x;
+  font-size: 15px;
   color: #6b6b6b;
   margin: 0;
   font-family: "Lato", sans-serif;
