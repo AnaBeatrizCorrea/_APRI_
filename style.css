@@ -1,4 +1,6 @@
-﻿:root{ --vermelho: #A62D37;
+﻿@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+:root{ --vermelho: #A62D37;
     --rose: #A64951;
     --dourado: #DBAD38;
     --ambar: #D98B48;
@@ -215,6 +217,7 @@ header button:hover, header a:hover{
 }
 .card1 img{
     width: 100%;
+    max-width: fit-content;
     height: 35%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -757,4 +760,383 @@ footer.sobre-footer a {
     transform: scale(1.05);
     transition: 0.3s;
 
+}
+
+/*ÁREA DO ASSOCIADO*/
+.as-secao_vermelha{
+  background-color: #A62D37;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #f5f5f5;
+  height: 250px;
+  box-shadow: inset 2px 2px 20px rgba(0,0,0,0.2);
+    
+}
+#sairArAssociado{
+  background-color: #dbad38;
+  color: #4B1919;
+  width: 6.5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 20px;
+  margin-right: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+
+    transition: background 0.2s;
+}
+#sairArAssociado:hover{
+  background: #cfa334;
+}
+.as-lado-esquerdo{
+    font-size: 1.25rem;
+    margin-left: 6rem;
+    font-family: "Playfair Display", serif;
+}
+.as-lado-esquerdo h2{
+    font-size: 3.25rem;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 10px;
+
+}
+.risco_amarelo{
+    background-color: #dbad38;
+    width: 60px;
+    height: 2.5px;
+}
+
+.as-cards-section {
+  padding: 6rem;
+  background: transparent;
+}
+
+.as-cards-section h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0 0 1.5rem;
+  color: #4B1919;
+}
+
+.as-cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.as-card {
+  flex: 1 1 180px;
+
+  background: #ffffff;
+  border: 1px solid rgba(181, 140, 30, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.05),
+        0 8px 24px rgba(0, 0, 0, 0.08);
+
+    backdrop-filter: blur(12px);
+}
+
+.as-card-label {
+  font-size: 15px;
+  color: #6b6b6b;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+
+}
+
+.as-card-value {
+  font-size: 26px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+  color: #4B1919;
+}
+
+
+.as-card-icon.associados { color: #A62D37; font-size: 50px;}
+.as-card-icon.projetos   { color: #dbad38; font-size: 50px;}
+.as-card-icon.receita    { color: #dbad38; font-size: 50px;}
+.as-card-icon.assembleia { color: #A62D37; font-size: 50px;}
+
+.as-container-bege{
+    background-color: #F5EBE0;
+    min-height: 500px;
+}
+
+.as-doc-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.as-doc-card {
+  flex: 0 0 calc(50% - 8px);
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid rgba(181, 140, 30, 0.3);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+
+  box-shadow: 0 4px 16px rgba(181, 140, 30, 0.15);
+}
+
+.as-doc-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.as-doc-tag {
+  font-size: 12px;
+  font-weight: 700;
+  color: #A62D37;
+  background: #F8E9DD;
+  padding: 3px 10px;
+  border-radius: 20px;
+  width: fit-content;
+  font-family: "Lato", sans-serif;
+}
+
+.as-doc-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #4B1919;
+  margin: 0;
+}
+
+.as-doc-date {
+  font-size: 15px;
+  color: #6b6b6b;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.as-doc-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+
+  background: #dbad38;
+  color: #4B1919;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+
+  transition: background 0.2s;
+}
+
+.as-doc-btn:hover {
+  background: #cfa334;
+}
+
+.as-member-avatar {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 50%;
+  background: #F5E2D1;
+  color: #A62D37;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+}
+
+.as-member-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.as-member-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #4B1919;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+.as-member-email {
+  font-size: 13px;
+  color: #6b6b6b;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.as-member-card {
+  gap: 12px;
+  justify-content: flex-start;
+}
+
+.as-search-container {
+  background: #ffffff;
+  border: 1px solid rgba(181, 140, 30, 0.3);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 16px rgba(181, 140, 30, 0.15);
+}
+
+.as-search-label {
+  font-size: 14px;
+  color: #6b6b6b;
+  margin: 0 0 8px;
+  font-family: "Lato", sans-serif;
+}
+
+.as-search-input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid rgba(181, 140, 30, 0.3);
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  color: #1a1a1a;
+  background: #ffffff;
+  box-sizing: border-box;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.as-search-input:focus {
+  border-color: rgba(181, 140, 30, 0.7);
+}
+
+.as-search-input::placeholder {
+  color: #b0a89a;
+}
+
+.as-info-box {
+  background: #ffffff;
+  border: 1px solid rgba(181, 140, 30, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 16px rgba(181, 140, 30, 0.15);
+}
+
+.as-info-box h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #4B1919;
+  margin: 0 0 1.25rem;
+}
+
+.as-cards-section-diretoria {
+  padding: 6rem;
+}
+
+.as-cards-section-diretoria h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0 0 1.5rem;
+  color: #4B1919;
+}
+
+
+.as-diretoria-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.as-diretoria-card {
+  flex: 0 0 calc(50% - 6px);
+  box-sizing: border-box;
+  background: #F5EBE0;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.as-diretoria-cargo {
+  font-size: 13px;
+  color: #6b6b6b;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.as-diretoria-nome {
+  font-size: 18px;
+  font-weight: 700;
+  color: #4B1919;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+
+.as-financeiro-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.as-financeiro-linha {
+  background: #F5EBE0;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.as-financeiro-label {
+  font-size: 16px;
+  color: #6b6b6b;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.as-financeiro-valor {
+  font-size: 16px;
+  font-weight: 600;
+  color: #4B1919;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  white-space: nowrap;
+}
+
+.as-financeiro-total {
+  font-size: 20px;
+  color: #4B1919;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+}
+
+.as-financeiro-valor-total {
+  font-size: 20px;
+  font-weight: 700;
+  color: #A62D37;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  white-space: nowrap;
 }
