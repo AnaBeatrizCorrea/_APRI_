@@ -27,6 +27,7 @@ html,body, section{
 .texto1{
     color: var(--wire);
     width: 50%;
+    font-size: 1.5rem;
     margin: 20px;
 }
 .texto2{
@@ -185,19 +186,27 @@ header button:hover, header a:hover{
 }
 .card1{
     background-color: white;
+    min-width: 30%;
+    min-height: 250px;
+    max-height: 30%;
     height: fit-content;
     width: fit-content;
-    max-width: 75%;
     margin: 10px;
     border: #DBAD38 1px solid;
     border-radius: 10px;
     text-align: center;
-    justify-content: start;
+    justify-content: center;
     font-size: medium;
     display: flex;
     flex-direction: column;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     gap: 20px;
+    font-family: "Lato", sans-serif;
+    
+}
+.card1 h2,p{
+  padding: 1.2rem;
+  font-size: 1.2rem;
 }
 .card2{
     background-color: var(--wire-light);
@@ -217,8 +226,9 @@ header button:hover, header a:hover{
 }
 .card1 img{
     width: 100%;
+    max-height: 500px;
     max-width: fit-content;
-    height: 35%;
+    /* height: 35%; */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     object-fit: cover;
