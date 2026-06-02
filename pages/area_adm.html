@@ -44,22 +44,22 @@
 
     <nav class="admin-tabs">
 
-        <button class="tab active">
+        <button class="tab active" onclick="switchTab('conteudos', this)">
             <i class="bi bi-file-earmark-text"></i>
             Conteúdos
         </button>
 
-        <button class="tab">
+        <button class="tab" onclick="switchTab('cursos', this)">
             <i class="bi bi-book"></i>
             Cursos
         </button>
 
-        <button class="tab">
+        <button class="tab" onclick="switchTab('projetos', this)">
             <i class="bi bi-briefcase"></i>
             Projetos
         </button>
 
-        <button class="tab">
+        <button class="tab" onclick="switchTab('associados', this)">
             <i class="bi bi-people"></i>
             Gestão de Associados
         </button>
@@ -68,134 +68,404 @@
 
     <main class="admin-container">
 
-        <div class="admin-topbar">
+        <div id="tab-conteudos" class="tab-panel active">
 
-            <h2>Gerenciar Conteúdos</h2>
+            <div class="admin-topbar">
+                <h2>Gerenciar Conteúdos</h2>
+                <button class="btn-add">
+                    <i class="bi bi-plus-lg"></i>
+                    Adicionar Conteúdo
+                </button>
+            </div>
 
-            <button class="btn-add">
-                <i class="bi bi-plus-lg"></i>
-                Adicionar Conteúdo
-            </button>
+            <div class="admin-list">
+
+                <div class="content-card">
+                    <div>
+                        <h3>Manual de Preservação do Patrimônio</h3>
+                        <div class="content-info">
+                            <span>Artigo</span>
+                            <span>•</span>
+                            <span class="published">Publicado</span>
+                            <span>•</span>
+                            <span>Mar 2026</span>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button><i class="bi bi-pencil"></i></button>
+                        <button><i class="bi bi-trash"></i></button>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <div>
+                        <h3>História Arquitetônica de Itu</h3>
+                        <div class="content-info">
+                            <span>Livro</span>
+                            <span>•</span>
+                            <span class="published">Publicado</span>
+                            <span>•</span>
+                            <span>Jan 2026</span>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button><i class="bi bi-pencil"></i></button>
+                        <button><i class="bi bi-trash"></i></button>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <div>
+                        <h3>Relatório Anual 2025</h3>
+                        <div class="content-info">
+                            <span>Relatório</span>
+                            <span>•</span>
+                            <span class="draft">Rascunho</span>
+                            <span>•</span>
+                            <span>Dez 2025</span>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button><i class="bi bi-pencil"></i></button>
+                        <button><i class="bi bi-trash"></i></button>
+                    </div>
+                </div>
+
+            </div>
 
         </div>
 
-        <div class="admin-list">
+        <div id="tab-cursos" class="tab-panel">
 
-            <div class="content-card">
+            <div class="admin-topbar">
+                <h2>Gerenciar Cursos</h2>
+                <button class="btn-add">
+                    <i class="bi bi-plus-lg"></i>
+                    Adicionar Curso
+                </button>
+            </div>
 
-                <div>
+            <div class="admin-list">
 
-                    <h3>
-                        Manual de Preservação do Patrimônio
-                    </h3>
-
-                    <div class="content-info">
-
-                        <span>Artigo</span>
-
-                        <span>•</span>
-
-                        <span class="published">
-                            Publicado
-                        </span>
-
-                        <span>•</span>
-
-                        <span>Mar 2026</span>
-
+                <div class="content-card">
+                    <div>
+                        <h3>História e Patrimônio de Itu</h3>
+                        <div class="content-info">
+                            <span>8h</span>
+                            <span>•</span>
+                            <span>Prof. João Silva</span>
+                            <span>•</span>
+                            <span class="published">Publicado</span>
+                        </div>
                     </div>
-
+                    <div class="actions">
+                        <button><i class="bi bi-pencil"></i></button>
+                        <button><i class="bi bi-trash"></i></button>
+                    </div>
                 </div>
 
-                <div class="actions">
+                <div class="content-card">
+                    <div>
+                        <h3>Introdução à Conservação</h3>
+                        <div class="content-info">
+                            <span>12h</span>
+                            <span>•</span>
+                            <span>Profa. Ana Costa</span>
+                            <span>•</span>
+                            <span class="published">Publicado</span>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button><i class="bi bi-pencil"></i></button>
+                        <button><i class="bi bi-trash"></i></button>
+                    </div>
+                </div>
 
-                    <button>
-                        <i class="bi bi-pencil"></i>
-                    </button>
-
-                    <button>
-                        <i class="bi bi-trash"></i>
-                    </button>
-
+                <div class="content-card">
+                    <div>
+                        <h3>Arquitetura Colonial Paulista</h3>
+                        <div class="content-info">
+                            <span>10h</span>
+                            <span>•</span>
+                            <span>Prof. Carlos Mendes</span>
+                            <span>•</span>
+                            <span class="draft">Rascunho</span>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button><i class="bi bi-pencil"></i></button>
+                        <button><i class="bi bi-trash"></i></button>
+                    </div>
                 </div>
 
             </div>
 
-            <div class="content-card">
+        </div>
 
-                <div>
 
-                    <h3>
-                        História Arquitetônica de Itu
-                    </h3>
+        <div id="tab-projetos" class="tab-panel">
 
-                    <div class="content-info">
+            <div class="admin-topbar">
+                <h2>Gerenciar Projetos</h2>
+                <button class="btn-add">
+                    <i class="bi bi-plus-lg"></i>
+                    Adicionar Projeto
+                </button>
+            </div>
 
-                        <span>Livro</span>
+            <div class="projetos-grid">
 
-                        <span>•</span>
 
-                        <span class="published">
-                            Publicado
-                        </span>
+                <div class="projetos-coluna">
+                    <h3 class="projetos-coluna-titulo">Projetos de Restauro</h3>
+                    <div class="admin-list">
 
-                        <span>•</span>
+                        <div class="content-card projeto-card">
+                            <div>
+                                <h3>Casarão do Centro</h3>
+                                <div class="content-info">
+                                    <span class="status-andamento">Em andamento</span>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <button><i class="bi bi-pencil"></i></button>
+                            </div>
+                        </div>
 
-                        <span>Jan 2026</span>
+                        <div class="content-card projeto-card">
+                            <div>
+                                <h3>Teatro Municipal</h3>
+                                <div class="content-info">
+                                    <span class="status-planejamento">Planejamento</span>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <button><i class="bi bi-pencil"></i></button>
+                            </div>
+                        </div>
 
                     </div>
-
                 </div>
 
-                <div class="actions">
+                <div class="projetos-coluna">
+                    <h3 class="projetos-coluna-titulo">Projetos Educacionais (APRI)</h3>
+                    <div class="admin-list">
 
-                    <button>
-                        <i class="bi bi-pencil"></i>
-                    </button>
+                        <div class="content-card projeto-card projeto-educacional">
+                            <div>
+                                <h3>Folhetos Educativos</h3>
+                                <div class="content-info projeto-financeiro">
+                                    <span class="valor-arrecadado">R$ 8.500</span>
+                                    <span class="valor-meta">Meta: R$ 15.000</span>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <button><i class="bi bi-pencil"></i></button>
+                            </div>
+                        </div>
 
-                    <button>
-                        <i class="bi bi-trash"></i>
-                    </button>
+                        <div class="content-card projeto-card projeto-educacional">
+                            <div>
+                                <h3>Maquetes 3D</h3>
+                                <div class="content-info projeto-financeiro">
+                                    <span class="valor-arrecadado">R$ 3.200</span>
+                                    <span class="valor-meta">Meta: R$ 12.000</span>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <button><i class="bi bi-pencil"></i></button>
+                            </div>
+                        </div>
 
+                    </div>
                 </div>
 
             </div>
 
-            <div class="content-card">
+        </div>
 
-                <div>
 
-                    <h3>
-                        Relatório Anual 2025
-                    </h3>
+        <div id="tab-associados" class="tab-panel">
 
-                    <div class="content-info">
+            <div class="admin-topbar" style="margin-bottom: 10px;">
+                <h2>Gestão de Associados</h2>
+            </div>
 
-                        <span>Relatório</span>
-
-                        <span>•</span>
-
-                        <span class="draft">
-                            Rascunho
-                        </span>
-
-                        <span>•</span>
-
-                        <span>Dez 2025</span>
-
-                    </div>
-
+            <div class="secao-associados">
+                <div class="secao-header">
+                    <h3 class="secao-titulo">Dados Gerais <span class="secao-sub">(visíveis na Área do Associado)</span></h3>
+                    <button class="btn-editar">
+                        <i class="bi bi-pencil-square"></i>
+                        Editar
+                    </button>
                 </div>
 
-                <div class="actions">
+                <div class="dados-gerais-grid">
+                    <div class="dado-card">
+                        <span class="dado-label">Total de Associados</span>
+                        <span class="dado-valor">47</span>
+                    </div>
+                    <div class="dado-card">
+                        <span class="dado-label">Projetos Ativos</span>
+                        <span class="dado-valor">12</span>
+                    </div>
+                    <div class="dado-card">
+                        <span class="dado-label">Arrecadação Total 2026</span>
+                        <span class="dado-valor destaque">R$ 28.450</span>
+                    </div>
+                    <div class="dado-card">
+                        <span class="dado-label">Próxima Assembleia</span>
+                        <span class="dado-valor">20 Jun</span>
+                    </div>
+                </div>
+            </div>
 
-                    <button>
-                        <i class="bi bi-pencil"></i>
+            <div class="secao-associados">
+                <div class="secao-header">
+                    <h3 class="secao-titulo">Composição da Diretoria</h3>
+                    <button class="btn-editar">
+                        <i class="bi bi-pencil-square"></i>
+                        Editar
                     </button>
+                </div>
 
-                    <button>
-                        <i class="bi bi-trash"></i>
+                <div class="diretoria-grid">
+                    <div class="diretoria-card">
+                        <span class="cargo">Presidente</span>
+                        <span class="nome-cargo">Geraldo Gonçalves Jr</span>
+                    </div>
+                    <div class="diretoria-card">
+                        <span class="cargo">Vice-Presidente</span>
+                        <span class="nome-cargo">Neusa Maria Trettel Scavacini</span>
+                    </div>
+                    <div class="diretoria-card">
+                        <span class="cargo">Secretária</span>
+                        <span class="nome-cargo">Rosangela Aparecida de Mazi Carnevalli Pereira</span>
+                    </div>
+                    <div class="diretoria-card">
+                        <span class="cargo">Tesoureiro</span>
+                        <span class="nome-cargo">Marcos Aparecido Passoni</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="secao-associados">
+                <div class="secao-header" style="margin-bottom: 20px;">
+                    <h3 class="secao-titulo">Cadastro de Associados</h3>
+                    <button class="btn-add">
+                        <i class="bi bi-plus-lg"></i>
+                        Adicionar Associado
                     </button>
+                </div>
+
+                <div class="filtros-bar">
+                    <div class="filtro-group">
+                        <label>Pesquisar por nome</label>
+                        <input type="text" id="busca-associado" placeholder="Digite o nome..." oninput="filtrarAssociados()">
+                    </div>
+                    <div class="filtro-group">
+                        <label>Filtrar por status</label>
+                        <select id="filtro-status" onchange="filtrarAssociados()">
+                            <option value="">Todos</option>
+                            <option value="ativo">Ativo</option>
+                            <option value="inativo">Inativo</option>
+                        </select>
+                    </div>
+                    <div class="filtro-group">
+                        <label>Ordenar</label>
+                        <select id="ordenar" onchange="filtrarAssociados()">
+                            <option value="az">A-Z</option>
+                            <option value="za">Z-A</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="admin-list" id="lista-associados">
+
+                    <div class="associado-card" data-nome="Ana Paula Costa" data-status="ativo">
+                        <div class="associado-info">
+                            <div class="associado-nome-linha">
+                                <span class="associado-nome">Ana Paula Costa</span>
+                                <span class="status-badge ativo">Ativo</span>
+                            </div>
+                            <span class="associado-contato">ana.costa@email.com · (11) 97654-3210</span>
+                        </div>
+                        <div class="associado-acoes">
+                            <button class="btn-expandir" onclick="toggleAssociado(this)">
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+                            <button class="btn-excluir"><i class="bi bi-trash"></i></button>
+                        </div>
+                    </div>
+                    <div class="associado-detalhes" style="display:none;">
+                        <p><strong>CPF:</strong> 123.456.789-00</p>
+                        <p><strong>Endereço:</strong> Rua das Flores, 45 - Itu, SP</p>
+                        <p><strong>Associado desde:</strong> Mar 2023</p>
+                    </div>
+
+                    <div class="associado-card" data-nome="Carla Ferreira Lima" data-status="ativo">
+                        <div class="associado-info">
+                            <div class="associado-nome-linha">
+                                <span class="associado-nome">Carla Ferreira Lima</span>
+                                <span class="status-badge ativo">Ativo</span>
+                            </div>
+                            <span class="associado-contato">carla.lima@email.com · (11) 95432-1098</span>
+                        </div>
+                        <div class="associado-acoes">
+                            <button class="btn-expandir" onclick="toggleAssociado(this)">
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+                            <button class="btn-excluir"><i class="bi bi-trash"></i></button>
+                        </div>
+                    </div>
+                    <div class="associado-detalhes" style="display:none;">
+                        <p><strong>CPF:</strong> 987.654.321-00</p>
+                        <p><strong>Endereço:</strong> Av. Paulista, 200 - Itu, SP</p>
+                        <p><strong>Associada desde:</strong> Jun 2022</p>
+                    </div>
+
+                    <div class="associado-card" data-nome="João Carlos Oliveira" data-status="ativo">
+                        <div class="associado-info">
+                            <div class="associado-nome-linha">
+                                <span class="associado-nome">João Carlos Oliveira</span>
+                                <span class="status-badge ativo">Ativo</span>
+                            </div>
+                            <span class="associado-contato">joao.oliveira@email.com · (11) 98765-4321</span>
+                        </div>
+                        <div class="associado-acoes">
+                            <button class="btn-expandir" onclick="toggleAssociado(this)">
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+                            <button class="btn-excluir"><i class="bi bi-trash"></i></button>
+                        </div>
+                    </div>
+                    <div class="associado-detalhes" style="display:none;">
+                        <p><strong>CPF:</strong> 456.789.123-00</p>
+                        <p><strong>Endereço:</strong> Rua do Comércio, 78 - Itu, SP</p>
+                        <p><strong>Associado desde:</strong> Jan 2024</p>
+                    </div>
+
+                    <div class="associado-card" data-nome="Maria Silva Santos" data-status="inativo">
+                        <div class="associado-info">
+                            <div class="associado-nome-linha">
+                                <span class="associado-nome">Maria Silva Santos</span>
+                                <span class="status-badge inativo">Inativo</span>
+                            </div>
+                            <span class="associado-contato">maria.santos@email.com · (11) 94321-5678</span>
+                        </div>
+                        <div class="associado-acoes">
+                            <button class="btn-expandir" onclick="toggleAssociado(this)">
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+                            <button class="btn-excluir"><i class="bi bi-trash"></i></button>
+                        </div>
+                    </div>
+                    <div class="associado-detalhes" style="display:none;">
+                        <p><strong>CPF:</strong> 321.654.987-00</p>
+                        <p><strong>Endereço:</strong> Rua XV de Novembro, 12 - Itu, SP</p>
+                        <p><strong>Associada desde:</strong> Ago 2021</p>
+                    </div>
 
                 </div>
 
@@ -205,5 +475,6 @@
 
     </main>
 
+    <script src="/scripts/admin.js"></script>
 </body>
 </html>
