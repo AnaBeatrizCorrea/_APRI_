@@ -204,7 +204,8 @@ header button:hover, header a:hover{
     font-family: "Lato", sans-serif;
     
 }
-.card1 h2,p{
+.card1 h2, 
+.card1 p{
   padding: 1.2rem;
   font-size: 1.2rem;
 }
