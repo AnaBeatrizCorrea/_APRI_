@@ -800,6 +800,23 @@ footer.sobre-footer a {
   flex-wrap: wrap;
 }
 
-#titulo-participar{
-  
+.h3-patrono{
+  padding-top: 20%;
+}
+
+.card{
+  background-color: var(--wire-light);
+  height: fit-content;
+  width: fit-content;
+  max-width: 75%;
+  margin: 10px;
+  border: #DBAD38 1px solid;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: start;
+  font-size: medium;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  gap: 20px;
 }
