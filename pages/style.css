@@ -800,11 +800,12 @@ footer.sobre-footer a {
   flex-wrap: wrap;
 }
 
-.h3-patrono{
-  padding-top: 20%;
+
+.icone{
+  margin-bottom:10%;
 }
 
-.card{
+.card-patrono{
   background-color: var(--wire-light);
   height: fit-content;
   width: fit-content;
@@ -818,5 +819,5 @@ footer.sobre-footer a {
   display: flex;
   flex-direction: column;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  gap: 20px;
+  gap: 10%;
 }
