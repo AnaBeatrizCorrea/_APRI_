@@ -1,6 +1,7 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-:root{ --vermelho: #A62D37;
+:root{ 
+  --vermelho: #A62D37;
     --rose: #A64951;
     --dourado: #DBAD38;
     --ambar: #D98B48;
@@ -11,6 +12,9 @@
     --text: #2A1A1A;
     --backgroundbtnlight: #8A6F6A;
     --preto:rgb(15, 0, 0);
+    --branco: rgb(255, 253, 253);
+    --icone-fundo: rgb(251, 218, 202);
+    --icone-fundo-claro:rgb(253, 231, 221, 70%);
 } 
 body{
             font-family: "Playfair Display", serif;
@@ -27,6 +31,7 @@ html,body, section{
 .texto1{
     color: var(--wire);
     width: 50%;
+    font-size: 1.5rem;
     margin: 20px;
 }
 .texto2{
@@ -110,13 +115,7 @@ footer a{
     border-radius: 15px;
     width: fit-content;
 }
-#direitos{
-    background-color: var(--borgonha);
-    color: var(--wire);
-    justify-content: space-between;
-    align-content: start;
-    text-align: center;
-}
+
 
 ul{
     font-size: 13.28px;
@@ -191,19 +190,27 @@ header button:hover, header a:hover{
 }
 .card1{
     background-color: white;
+    min-width: 30%;
+    min-height: 250px;
+    max-height: 30%;
     height: fit-content;
     width: fit-content;
-    max-width: 75%;
     margin: 10px;
     border: #DBAD38 1px solid;
     border-radius: 10px;
     text-align: center;
-    justify-content: start;
+    justify-content: center;
     font-size: medium;
     display: flex;
     flex-direction: column;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     gap: 20px;
+    font-family: "Lato", sans-serif;
+    
+}
+.card1 h2,p{
+  padding: 1.2rem;
+  font-size: 1.2rem;
 }
 .card2{
     background-color: var(--wire-light);
@@ -223,8 +230,9 @@ header button:hover, header a:hover{
 }
 .card1 img{
     width: 100%;
+    max-height: 500px;
     max-width: fit-content;
-    height: 35%;
+    /* height: 35%; */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     object-fit: cover;
@@ -766,4 +774,2024 @@ footer.sobre-footer a {
     transform: scale(1.05);
     transition: 0.3s;
 
+}
+
+/*ÁREA DO ASSOCIADO*/
+.as-secao_vermelha{
+  background-color: #A62D37;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #f5f5f5;
+  height: 250px;
+  box-shadow: inset 2px 2px 20px rgba(0,0,0,0.2);
+    
+}
+#sairArAssociado{
+  background-color: #dbad38;
+  color: #4B1919;
+  width: 6.5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 20px;
+  margin-right: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+
+    transition: background 0.2s;
+}
+#sairArAssociado:hover{
+  background: #cfa334;
+}
+.as-lado-esquerdo{
+    font-size: 1.25rem;
+    margin-left: 6rem;
+    font-family: "Playfair Display", serif;
+}
+.as-lado-esquerdo h2{
+    font-size: 3.25rem;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 10px;
+
+}
+.risco_amarelo{
+    background-color: #dbad38;
+    width: 60px;
+    height: 2.5px;
+}
+
+.as-cards-section {
+  padding: 6rem;
+  background: transparent;
+}
+
+.as-cards-section h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0 0 1.5rem;
+  color: #4B1919;
+}
+
+.as-cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.as-card {
+  flex: 1 1 180px;
+
+  background: #ffffff;
+  border: 1px solid rgba(181, 140, 30, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.05),
+        0 8px 24px rgba(0, 0, 0, 0.08);
+
+    backdrop-filter: blur(12px);
+}
+
+.as-card-label {
+  font-size: 15px;
+  color: #6b6b6b;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+
+}
+
+.as-card-value {
+  font-size: 26px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+  color: #4B1919;
+}
+
+
+.as-card-icon.associados { color: #A62D37; font-size: 50px;}
+.as-card-icon.projetos   { color: #dbad38; font-size: 50px;}
+.as-card-icon.receita    { color: #dbad38; font-size: 50px;}
+.as-card-icon.assembleia { color: #A62D37; font-size: 50px;}
+
+.as-container-bege{
+    background-color: #F5EBE0;
+    min-height: 500px;
+}
+
+.as-doc-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.as-doc-card {
+  flex: 0 0 calc(50% - 8px);
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid rgba(181, 140, 30, 0.3);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+
+  box-shadow: 0 4px 16px rgba(181, 140, 30, 0.15);
+}
+
+.as-doc-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.as-doc-tag {
+  font-size: 12px;
+  font-weight: 700;
+  color: #A62D37;
+  background: #F8E9DD;
+  padding: 3px 10px;
+  border-radius: 20px;
+  width: fit-content;
+  font-family: "Lato", sans-serif;
+}
+
+.as-doc-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #4B1919;
+  margin: 0;
+}
+
+.as-doc-date {
+  font-size: 15px;
+  color: #6b6b6b;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.as-doc-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+
+  background: #dbad38;
+  color: #4B1919;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+
+  transition: background 0.2s;
+}
+
+.as-doc-btn:hover {
+  background: #cfa334;
+}
+
+.as-member-avatar {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 50%;
+  background: #F5E2D1;
+  color: #A62D37;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+}
+
+.as-member-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.as-member-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #4B1919;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+.as-member-email {
+  font-size: 13px;
+  color: #6b6b6b;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.as-member-card {
+  gap: 12px;
+  justify-content: flex-start;
+}
+
+.as-search-container {
+  background: #ffffff;
+  border: 1px solid rgba(181, 140, 30, 0.3);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 16px rgba(181, 140, 30, 0.15);
+}
+
+.as-search-label {
+  font-size: 14px;
+  color: #6b6b6b;
+  margin: 0 0 8px;
+  font-family: "Lato", sans-serif;
+}
+
+.as-search-input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid rgba(181, 140, 30, 0.3);
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  color: #1a1a1a;
+  background: #ffffff;
+  box-sizing: border-box;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.as-search-input:focus {
+  border-color: rgba(181, 140, 30, 0.7);
+}
+
+.as-search-input::placeholder {
+  color: #b0a89a;
+}
+
+.as-info-box {
+  background: #ffffff;
+  border: 1px solid rgba(181, 140, 30, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 16px rgba(181, 140, 30, 0.15);
+}
+
+.as-info-box h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #4B1919;
+  margin: 0 0 1.25rem;
+}
+
+.as-cards-section-diretoria {
+  padding: 6rem;
+}
+
+.as-cards-section-diretoria h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0 0 1.5rem;
+  color: #4B1919;
+}
+
+
+.as-diretoria-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.as-diretoria-card {
+  flex: 0 0 calc(50% - 6px);
+  box-sizing: border-box;
+  background: #F5EBE0;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.as-diretoria-cargo {
+  font-size: 13px;
+  color: #6b6b6b;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.as-diretoria-nome {
+  font-size: 18px;
+  font-weight: 700;
+  color: #4B1919;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+
+.as-financeiro-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.as-financeiro-linha {
+  background: #F5EBE0;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.as-financeiro-label {
+  font-size: 16px;
+  color: #6b6b6b;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.as-financeiro-valor {
+  font-size: 16px;
+  font-weight: 600;
+  color: #4B1919;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  white-space: nowrap;
+}
+
+.as-financeiro-total {
+  font-size: 20px;
+  color: #4B1919;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+}
+
+.as-financeiro-valor-total {
+  font-size: 20px;
+  font-weight: 700;
+  color: #A62D37;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  white-space: nowrap;
+}
+
+#motivo-participa, .linhas-motivo{
+  display:inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  background-color: var(--icone-fundo-claro);
+  gap: 10%;
+  padding: 2%;
+  }
+
+
+#motivo-participa .caixa_texto{
+  width: 30%;
+}
+#motivo-participa section{
+  display: flex;
+  background-color: var(--icone-fundo-claro);
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+#motivo-participa section hr{
+  margin-top:5%;
+}
+
+#titulo-participar h1{
+  padding-top: 13.5%;
+  padding-bottom: 5%;
+}
+#cards-patrono i{
+  background-color: var(--icone-fundo);
+  color: var(--rose);
+  border-radius: 55%;
+  padding: 3%;
+  margin-bottom: 50%;
+  font-size: 150%;
+}
+
+#cards-patrono, .separacao-cards{
+  padding: 0%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#cards-patrono{
+  display: inline-flex;
+  margin-top:2.5rem;
+  margin-bottom: 5rem
+}
+
+.icone{
+  margin:5%;
+  padding:1%;
+}
+
+.separacao-cards{
+  justify-content: center;
+  align-items:center;
+  gap: 3.5rem;
+}
+
+
+.card-patrono{
+  background-color: var(--branco);
+  width: 350px;
+  height: 250px;
+  margin: 10px;
+  border: #DBAD38 1px solid;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  font-size: medium;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  gap: 5%;
+}
+
+.caixa-patrono{
+  padding: 2%;
+  width: 40% !important;
+  background-color: var(--icone-fundo-claro);
+}
+
+.icone-correto{
+  color:var(--dourado);
+  font-size: 200%;
+  height: auto;
+  padding-top: 2%;
+  padding-right: 2%;
+}
+
+.p-motivo{
+  padding-left: 10%;
+}
+#caixa_texto-patrono{
+  background-color: var(--bg);
+}
+#secao-participar{
+  background-color: var(--icone-fundo-claro);
+  padding-top: 0px;
+}
+
+#secao-cards{
+  padding-bottom: 0;
+}
+
+.card1 #h2-diferenca{
+  font-family: "playfair-display", serif;
+  font-size: 4.5rem;
+  color:var(--borgonha);
+  margin-bottom: 1rem;
+}
+
+#card-queroser{
+  width: 50%;
+  border: solid var(--dourado) 3.5px;
+  padding: 5%;
+  align-items: center;
+}
+
+#botao-patrono{
+    border: 0;
+    width: 30rem;
+    margin-top: 5rem;
+    font-size: 2rem;
+    justify-content: center;
+    font-family: "Lato", sans-serif;
+}
+
+.linhas-motivo{
+  width:80%;
+  flex-wrap: wrap;
+}
+
+.card-comoparticipar{
+  background-color: var(--branco);
+  width: max-content;
+  height: 20rem;
+  margin: 10px;
+  border: #DBAD38 1px solid;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  font-size: medium;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  gap: 5%;
+  text-align: start;
+}
+
+#cards-comoparticipar{
+  padding: 0%;
+  max-width: 80%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-top:2.5rem;
+  margin-bottom: 5rem;
+  text-align: start;
+}
+.participa-p{
+  color: rgb(166, 45, 55); 
+  font-size: 0.95rem; 
+  font-weight: 600;
+  padding: 0;
+}
+
+.texto-participa{
+  width: 70%;
+}
+.titulo-participa{
+    padding-left: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+ 
+/* ==========================================================================
+   Ajustes específicos para o card horizontal "Seja Associado"
+   ========================================================================== */
+
+/* Sobrescreve e adapta a estrutura para formato horizontal */
+.card-horizontal-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    background-color: var(--branco);
+    border: var(--wire-light) 1px solid;
+    border-radius: 12px;
+    padding: 40px;
+    width: 100%;
+    max-width: 1050px;
+    height: auto; /* Cancela a altura fixa de 20rem dos outros cards */
+    margin: 0 auto 40px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+/* Coluna do Conteúdo */
+.conteudo-card-esquerda {
+    flex: 2;
+}
+
+.cabecalho-participa {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.icone-associado {
+    font-size: 22px;
+    background-color: #f7eded;
+    color: var(--vermelho);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.titulos-cabecalho h3 {
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    color: var(--text);
+}
+
+.card-horizontal-layout .participa-p {
+    margin: 2px 0 0 0;
+    color: var(--vermelho);
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.descricao-associado {
+    font-family: "Lato", sans-serif;
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+/* Lista de Benefícios */
+.beneficios-associado h4 {
+    font-family: "Lato", sans-serif;
+    color: var(--vermelho);
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.beneficios-associado ul {
+    display: flex;
+    flex-direction: column; /* Lista fica vertical */
+    gap: 10px;
+    font-size: 14px;
+}
+
+.beneficios-associado li {
+    font-family: "Lato", sans-serif;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.beneficios-associado li i {
+    color: var(--vermelho);
+    font-weight: bold;
+}
+
+/* Faixa de Requisitos Inferior */
+.requisitos-associado {
+    background-color: var(--bg);
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.requisitos-associado p {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    color: var(--text);
+    font-size: 13px;
+}
+
+.requisitos-associado strong {
+    color: var(--vermelho);
+}
+
+/* Coluna Lateral do Botão (Caixa Cinza/Bege) */
+.coluna-card-direita {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-box-associado {
+    background-color: var(--bg);
+    border-radius: 12px;
+    padding: 35px 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 280px;
+}
+
+.cta-box-associado p {
+    font-family: "Playfair Display", serif;
+    color: var(--text);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Botão Redondo com Ícone */
+.btn-associar-agora {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: var(--vermelho);
+    color: var(--branco);
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    width: 100%;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-associar-agora:hover {
+    background-color: var(--borgonha);
+}
+
+/* Responsividade para manter o site acessível em celulares */
+@media (max-width: 850px) {
+    .card-horizontal-layout {
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+    }
+    
+    .coluna-card-direita {
+        width: 100%;
+    }
+    
+    .cta-box-associado {
+        max-width: 100%;
+    }
+}
+/* ==========================================================================
+   Variações de Cor e Elementos Específicos (Patrono e Voluntariado)
+   ========================================================================== */
+
+/* --- Card Patrono (Destaque) --- */
+.card-patrono-destaque {
+    position: relative;
+    border-top: none; /* Deixa o topo plano para receber a tag */
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding-top: 50px; /* Dá espaço para a tag superior */
+    border: var(--dourado) 1px solid;
+}
+
+/* Faixa superior dourada "DESTAQUE" */
+.tag-destaque {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--dourado);
+    color: var(--text);
+    font-family: "Lato", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding: 8px 0;
+    border-top-left-radius: 11px; /* Compensa o arredondamento do card */
+    border-top-right-radius: 11px;
+}
+
+/* Modificadores Dourados (Patrono) */
+.icone-patrono {
+    background-color: #fff9e6;
+    color: var(--dourado);
+}
+
+.p-patrono, .beneficios-patrono h4, .strong-patrono {
+    color: var(--dourado) !important;
+}
+
+.beneficios-patrono li i {
+    color: var(--dourado) !important;
+}
+
+.btn-patrono-cor {
+    background-color: var(--dourado) !important;
+    color: var(--text) !important;
+}
+
+.btn-patrono-cor:hover {
+    background-color: var(--ambar) !important;
+}
+
+/* --- Card Voluntariado (Laranja/Ambar) --- */
+.icone-voluntario {
+    background-color: #fff3eb;
+    color: var(--ambar);
+}
+
+.p-voluntario, .beneficios-voluntario h4, .strong-voluntario {
+    color: var(--ambar) !important;
+}
+
+.beneficios-voluntario li i {
+    color: var(--ambar) !important;
+}
+
+.btn-voluntario-cor {
+    background-color: var(--ambar) !important;
+    color: var(--branco) !important;
+}
+
+.btn-voluntario-cor:hover {
+    background-color: var(--dourado) !important;
+    color: var(--text) !important;
+}
+
+/* Ajuste fino de espaçamento para as listas não quebrarem em colunas */
+.beneficios-associado ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* ==========================================================================
+   Seção Comparativa: Qual a Diferença?
+   ========================================================================== */
+
+.secao-comparativo-diferenca {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: var(--bg);
+}
+
+.titulo-diferenca {
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.subtitulo-diferenca {
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    color: var(--text);
+    opacity: 0.7;
+    margin-bottom: 50px;
+}
+
+/* Container que joga os cards menores lado a lado */
+.container-cards-diferenca {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Estilo Base dos Mini Cards */
+.mini-card-diferenca {
+    background-color: var(--branco);
+    border: var(--wire-light) 1px solid;
+    border-radius: 12px;
+    padding: 30px;
+    flex: 1;
+    max-width: 420px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+}
+
+/* Borda dourada para o mini card do Patrono */
+.mini-card-patrono {
+    border: var(--dourado) 1px solid;
+}
+
+/* Cabeçalho Interno dos Mini Cards */
+.mini-cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.mini-cabecalho i {
+    font-size: 20px;
+}
+
+.icone-mini-associado {
+    color: var(--vermelho);
+}
+
+.icone-mini-patrono {
+    color: var(--dourado);
+}
+
+.mini-cabecalho h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    color: var(--text);
+    margin: 0;
+}
+
+/* Listas internas dos Mini Cards */
+.mini-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+}
+
+.mini-lista li {
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.4;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.mini-lista li i {
+    color: var(--vermelho);
+    font-weight: bold;
+}
+
+.mini-card-patrono .mini-lista li i {
+    color: var(--dourado); /* Checkmark dourado para o Patrono */
+}
+
+/* Responsividade para Telas de Celular */
+@media (max-width: 768px) {
+    .container-cards-diferenca {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mini-card-diferenca {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* ==========================================================================
+   Seção Final: Ainda tem dúvidas?
+   ========================================================================== */
+
+/* Ajustes na seção para garantir o espaçamento vertical e centralização */
+.secao-duvidas-final {
+    min-height: 40vh; /* Ajusta a altura proporcionalmente ao print */
+    width: 100%;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin:0;
+}
+
+.titulo-duvidas {
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    color: var(--bg); /* Usa a cor bege clara do seu root para o texto */
+    margin: 0;
+}
+
+.texto-duvidas {
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    color: var(--bg);
+    max-width: 600px;
+    line-height: 1.5;
+    margin: 0 0 10px 0;
+    opacity: 0.9;
+}
+
+/* Botão Arredondado Dourado */
+.btn-fale-conosco {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: var(--dourado);
+    color: var(--text);
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.btn-fale-conosco:hover {
+    background-color: var(--ambar);
+    color: var(--branco);
+}
+
+.btn-fale-conosco:active {
+    transform: scale(0.98);
+}
+
+/* ==========================================================================
+   Seção Isolada do Formulário: Cadastre-se como Patrono
+   ========================================================================== */
+
+.secao-cadastro-patrono {
+    padding: 60px 20px;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo-cadastro {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+/* Força uma linha centralizada curta abaixo do título */
+.linha-curta {
+    border: none;
+    height: 3px;
+    background-color: var(--dourado);
+    width: 40px;
+    margin: 0 auto 35px auto;
+}
+
+/* Card Branco Centralizado */
+.card-formulario-patrono {
+    background-color: var(--branco);
+    border-radius: 12px;
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    border: 1px solid var(--wire-light);
+    text-align: left;
+}
+
+.form-patrono-novo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100% !important; /* Sobrescreve largura do form global se necessário */
+    background-color: transparent !important;
+    padding: 0 !important;
+}
+
+/* Container para alinhar Nome e Email na mesma linha */
+.linha-form-dupla {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.linha-form-dupla .grupo-campo {
+    flex: 1;
+}
+
+.grupo-campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.grupo-campo label {
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+/* inputs, selects e textareas específicos do novo formulário */
+.form-patrono-novo input,
+.form-patrono-novo select,
+.form-patrono-novo textarea {
+    width: 100% !important; /* Ajusta para ocupar todo o card */
+    border: 1px solid var(--wire) !important;
+    border-radius: 8px !important;
+    padding: 12px 14px !important;
+    font-family: "Lato", sans-serif !important;
+    font-size: 13px !important;
+    color: var(--text) !important;
+    background-color: var(--branco) !important;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-patrono-novo input:focus,
+.form-patrono-novo select:focus,
+.form-patrono-novo textarea:focus {
+    border-color: var(--dourado) !important;
+}
+
+.form-patrono-novo textarea {
+    resize: vertical;
+}
+
+/* Botão Largo Dourado */
+.btn-enviar-patrono {
+    background-color: var(--dourado);
+    color: var(--text);
+    border: none;
+    border-radius: 25px;
+    padding: 14px 20px;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-enviar-patrono:hover {
+    background-color: var(--ambar);
+    color: var(--branco);
+}
+
+.nota-privacidade {
+    font-family: "Lato", sans-serif;
+    font-size: 11px;
+    color: var(--wire);
+    text-align: center;
+    padding: 0;
+    margin-top: 5px;
+}
+
+/* Adaptação para telas de celulares */
+@media (max-width: 600px) {
+    .linha-form-dupla {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .card-formulario-patrono {
+        padding: 25px 20px;
+    }
+}
+
+/* ==========================================================================
+   Página: Associe-se à APRI
+   ========================================================================== */
+
+.secao-hero-associe {
+    min-height: 35vh !important;
+    padding: 40px 20px;
+}
+
+.titulo-hero-associe {
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    color: var(--bg);
+    margin: 0;
+}
+
+.subtitulo-hero-associe {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    color: var(--bg);
+    max-width: 550px;
+    line-height: 1.5;
+    opacity: 0.9;
+    margin: 10px 0 0 0;
+}
+
+.secao-info-associe {
+    padding: 60px 20px;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo-bloco-associe {
+    font-family: "Playfair Display", serif;
+    font-size: 26px;
+    color: var(--text);
+    margin: 0;
+}
+
+.linha-curta-associe {
+    border: none;
+    height: 3px;
+    background-color: var(--dourado);
+    width: 40px;
+    margin: 12px auto 30px auto;
+}
+
+.texto-bloco-associe {
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 50px;
+}
+
+.texto-bloco-associe p {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    opacity: 0.85;
+}
+
+/* Fileira de Cards */
+.grid-pilares-associe {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+    max-width: 850px;
+}
+
+.card-pilar-associe {
+    background-color: var(--branco);
+    border: var(--wire-light) 1px solid;
+    border-radius: 12px;
+    padding: 30px 20px;
+    flex: 1;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+}
+
+.icone-pilar-wrapper {
+    width: 45px;
+    height: 45px;
+    background-color: #f7eded;
+    color: var(--vermelho);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.card-pilar-associe h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.card-pilar-associe p {
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    color: var(--text);
+    line-height: 1.4;
+    padding: 0;
+    margin: 0;
+    opacity: 0.7;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 768px) {
+    .grid-pilares-associe {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .card-pilar-associe {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* ==========================================================================
+   Seção: Como se Associar (Cards Empilhados)
+   ========================================================================== */
+
+.secao-como-associar {
+    padding: 20px 20px 60px 20px;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-como-associar {
+    font-family: "Playfair Display", serif;
+    font-size: 26px;
+    color: var(--text);
+    margin: 0;
+}
+
+/* Base Comum para os dois Cards Grandes */
+.card-processo-associacao,
+.card-contribuicao-financeira {
+    background-color: var(--branco);
+    border: var(--wire-light) 1px solid;
+    border-radius: 12px;
+    padding: 40px;
+    width: 100%;
+    max-width: 850px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Títulos dos Cards */
+.card-processo-associacao h3,
+.card-contribuicao-financeira h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    color: var(--text);
+    margin-bottom: 25px;
+}
+
+/* Estrutura da Lista com Números Redondos */
+.lista-etapas-associar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.lista-etapas-associar li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.numero-etapa {
+    background-color: var(--dourado);
+    color: var(--text);
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.lista-etapas-associar p {
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    opacity: 0.85;
+}
+
+/* Botão de Download Centralizado dentro do Card */
+.btn-baixar-estatuto {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: var(--dourado);
+    color: var(--text);
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 20px;
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    align-self: center;
+    transition: background-color 0.2s ease;
+}
+
+.btn-baixar-estatuto:hover {
+    background-color: var(--ambar);
+    color: var(--branco);
+}
+
+/* Alinhamento do Ícone de Cifrão com o Título */
+.cabecalho-contribuicao {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 5px;
+}
+
+.cabecalho-contribuicao h3 {
+    margin-bottom: 0;
+}
+
+.icone-cifrao {
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    color: var(--vermelho);
+    font-weight: bold;
+}
+
+.descricao-contribuicao {
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.6;
+    padding: 0;
+    margin-bottom: 25px;
+    opacity: 0.85;
+}
+
+/* Bloco Bege do Valor */
+.bloco-valor-parcela {
+    background-color: var(--icone-fundo-claro);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.texto-ano-parcela {
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    color: var(--text);
+    opacity: 0.7;
+}
+
+.valor-dinheiro {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    color: var(--vermelho);
+    font-weight: bold;
+}
+
+.texto-periodicidade {
+    font-family: "Lato", sans-serif;
+    font-size: 11px;
+    color: var(--text);
+    opacity: 0.5;
+}
+
+/* Ajustes de Padding para Telas Pequenas */
+@media (max-width: 600px) {
+    .card-processo-associacao,
+    .card-contribuicao-financeira {
+        padding: 25px 20px;
+    }
+}
+
+/* ==========================================================================
+   Seção: Solicite sua Associação (Instruções e Formulário de Inscrição)
+   ========================================================================== */
+
+.secao-solicite-associacao {
+    padding: 20px 20px 80px 20px;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-solicite {
+    font-family: "Playfair Display", serif;
+    font-size: 26px;
+    color: var(--text);
+    margin: 0;
+}
+
+/* Card 1: Bloco de Instruções Superior */
+.card-instrucoes-solicite {
+    background-color: var(--branco);
+    border: var(--wire-light) 1px solid;
+    border-radius: 12px;
+    padding: 35px 40px;
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitulo-instrucoes {
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 12px;
+    padding: 0;
+}
+
+.lista-instrucoes-solicite {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    margin-bottom: 25px;
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.lista-instrucoes-solicite li {
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.5;
+    list-style: disc; /* Força os bullets tradicionais */
+    opacity: 0.85;
+}
+
+.btn-baixar-ficha {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: var(--dourado);
+    color: var(--text);
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 20px;
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    align-self: flex-start;
+    transition: background-color 0.2s ease;
+}
+
+.btn-baixar-ficha:hover {
+    background-color: var(--ambar);
+    color: var(--branco);
+}
+
+/* Card 2: Estrutura do Formulário Alvo */
+.card-form-solicite {
+    background-color: var(--branco);
+    border: var(--wire-light) 1px solid;
+    border-radius: 12px;
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+}
+
+.form-solicite-novo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100% !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+}
+
+.grupo-campo-solicite {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.grupo-campo-solicite label {
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.form-solicite-novo input[type="text"],
+.form-solicite-novo input[type="email"],
+.form-solicite-novo textarea {
+    width: 100% !important;
+    border: 1px solid var(--wire) !important;
+    border-radius: 6px !important;
+    padding: 12px 14px !important;
+    font-family: "Lato", sans-serif !important;
+    font-size: 13px !important;
+    color: var(--text) !important;
+    background-color: var(--branco) !important;
+    outline: none;
+}
+
+.form-solicite-novo textarea {
+    resize: vertical;
+}
+
+/* Upload Customizado de Arquivo */
+.container-upload-arquivo {
+    position: relative;
+    width: 100%;
+}
+
+/* Esconde o input file nativo feio */
+.container-upload-arquivo input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.label-custom-upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 1px dashed var(--wire) !important;
+    background-color: var(--branco);
+    padding: 14px !important;
+    border-radius: 6px;
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    color: var(--text);
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.label-custom-upload i {
+    color: var(--rose);
+}
+
+.container-upload-arquivo:hover .label-custom-upload {
+    background-color: #faf6f5;
+    border-color: var(--dourado) !important;
+}
+
+.formatos-suportados {
+    font-family: "Lato", sans-serif;
+    font-size: 11px;
+    color: var(--wire);
+    margin-top: -2px;
+}
+
+/* Botão Largo Inferior Dourado */
+.btn-enviar-solicitacao {
+    background-color: var(--dourado);
+    color: var(--text);
+    border: none;
+    border-radius: 25px;
+    padding: 14px 20px;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-enviar-solicitacao:hover {
+    background-color: var(--ambar);
+    color: var(--branco);
+}
+
+.nota-privacidade-solicite {
+    font-family: "Lato", sans-serif;
+    font-size: 11px;
+    color: var(--wire);
+    text-align: center;
+    padding: 0;
+    line-height: 1.4;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+/* Responsividade celular */
+@media (max-width: 600px) {
+    .card-instrucoes-solicite,
+    .card-form-solicite {
+        padding: 25px 20px;
+    }
+}
+
+/* ==========================================================================
+   Página: Parceiros
+   ========================================================================== */
+
+.secao-hero-parceiros {
+    min-height: 38vh !important;
+    padding: 50px 20px;
+}
+
+.titulo-hero-parceiros {
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    color: var(--bg);
+    margin: 0;
+}
+
+.subtitulo-hero-parceiros {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    color: var(--bg);
+    max-width: 650px;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin: 15px 0 0 0;
+}
+
+.secao-tipos-parceiros {
+    padding: 60px 20px 40px 20px;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo-bloco-parceiros {
+    font-family: "Playfair Display", serif;
+    font-size: 26px;
+    color: var(--text);
+    margin: 0;
+}
+
+.linha-curta-parceiros {
+    border: none;
+    height: 3px;
+    background-color: var(--dourado);
+    width: 40px;
+    margin: 12px auto 40px auto;
+}
+
+/* Container de 4 Colunas para os Tipos de Parceiros */
+.grid-tipos-parceiros {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1100px;
+    flex-wrap: wrap;
+}
+
+.card-tipo-parceiro {
+    background-color: var(--branco);
+    border: var(--wire-light) 1px solid;
+    border-radius: 12px;
+    padding: 30px 15px;
+    flex: 1;
+    min-width: 220px;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+}
+
+.icone-parceiro-wrapper {
+    width: 45px;
+    height: 45px;
+    background-color: #f7eded;
+    color: var(--vermelho);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.card-tipo-parceiro h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 15px;
+    color: var(--text);
+    margin-bottom: 12px;
+    min-height: 36px; /* Mantém os textos alinhados mesmo se quebrarem linha */
+    display: flex;
+    align-items: center;
+}
+
+.card-tipo-parceiro p {
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    color: var(--text);
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    opacity: 0.75;
+}
+
+/* Seção Inferior: Grid de Logos */
+.secao-nossos-parceiros {
+    padding: 40px 20px 80px 20px;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.linha-logos-parceiros {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 1100px;
+    flex-wrap: wrap;
+}
+
+.card-logo-parceiro {
+    background-color: var(--branco);
+    border: var(--wire-light) 1px solid;
+    border-radius: 12px;
+    padding: 25px 15px;
+    flex: 1;
+    min-width: 160px;
+    max-width: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+}
+
+.icone-logo-placeholder {
+    width: 35px;
+    height: 35px;
+    background-color: #f7eded;
+    color: var(--vermelho);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.card-logo-parceiro span {
+    font-family: "Lato", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text);
+    opacity: 0.8;
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 900px) {
+    .grid-tipos-parceiros, .linha-logos-parceiros {
+        gap: 20px;
+    }
+    .card-tipo-parceiro, .card-logo-parceiro {
+        flex: 1 1 40%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .card-tipo-parceiro, .card-logo-parceiro {
+        flex: 1 1 100%;
+    }
+}
+
+/* ==========================================================================
+   Seção: Destaques de Parcerias e Bloco de Contato Final
+   ========================================================================== */
+
+.secao-destaque-parcerias {
+    padding: 40px 20px 60px 20px;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.subtitulo-destaque-parcerias {
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    color: var(--text);
+    max-width: 650px;
+    line-height: 1.5;
+    opacity: 0.75;
+    margin: 0 auto 40px auto;
+}
+
+/* Grid de Cards com Imagem */
+.grid-destaque-parcerias {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.card-destaque-item {
+    background-color: var(--branco);
+    border: var(--wire-light) 1px solid;
+    border-radius: 12px;
+    overflow: hidden; /* Garante que a imagem siga o raio da borda */
+    flex: 1;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.card-destaque-item img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border: none;
+    padding: 0;
+}
+
+.conteudo-destaque-item {
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.conteudo-destaque-item h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 15px;
+    color: var(--text);
+    margin: 0;
+    line-height: 1.4;
+}
+
+.conteudo-destaque-item p {
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    color: var(--text);
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    opacity: 0.75;
+}
+
+/* Seção Final Vermelha */
+.secao-parceiro-final {
+    min-height: 45vh !important;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.icone-parceiro-final {
+    font-size: 22px;
+    color: var(--dourado);
+    border: 1.5px solid var(--dourado);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.titulo-parceiro-final {
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    color: var(--bg);
+    margin: 0;
+}
+
+.texto-parceiro-final {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    color: var(--bg);
+    max-width: 600px;
+    line-height: 1.6;
+    margin: 0 0 15px 0;
+    opacity: 0.9;
+}
+
+/* Botão Redondo Dourado */
+.btn-entrar-contato {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: var(--dourado);
+    color: var(--text);
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-entrar-contato:hover {
+    background-color: var(--ambar);
+    color: var(--branco);
+}
+
+/* Responsividade */
+@media (max-width: 850px) {
+    .grid-destaque-parcerias {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    .card-destaque-item {
+        max-width: 100%;
+        width: 100%;
+    }
 }
