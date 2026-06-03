@@ -14,7 +14,7 @@
         type="image/x-icon">
 </head>
 <body>
-
+     <div id="site-header" data-cta-text="Entrar" data-cta-class="btn2"></div>
     <section class="admin-header">
 
         <div class="space_between">
@@ -68,6 +68,7 @@
 
     <main class="admin-container">
 
+        <!-- ═══════════════ CONTEÚDOS ═══════════════ -->
         <div id="tab-conteudos" class="tab-panel active">
 
             <div class="admin-topbar">
@@ -135,6 +136,7 @@
 
         </div>
 
+        <!-- ═══════════════ CURSOS ═══════════════ -->
         <div id="tab-cursos" class="tab-panel">
 
             <div class="admin-topbar">
@@ -202,7 +204,7 @@
 
         </div>
 
-
+        <!-- ═══════════════ PROJETOS ═══════════════ -->
         <div id="tab-projetos" class="tab-panel">
 
             <div class="admin-topbar">
@@ -215,7 +217,7 @@
 
             <div class="projetos-grid">
 
-
+                <!-- Coluna esquerda: Restauro -->
                 <div class="projetos-coluna">
                     <h3 class="projetos-coluna-titulo">Projetos de Restauro</h3>
                     <div class="admin-list">
@@ -247,6 +249,7 @@
                     </div>
                 </div>
 
+                <!-- Coluna direita: Educacionais -->
                 <div class="projetos-coluna">
                     <h3 class="projetos-coluna-titulo">Projetos Educacionais (APRI)</h3>
                     <div class="admin-list">
@@ -284,13 +287,14 @@
 
         </div>
 
-
+        <!-- ═══════════════ GESTÃO DE ASSOCIADOS ═══════════════ -->
         <div id="tab-associados" class="tab-panel">
 
             <div class="admin-topbar" style="margin-bottom: 10px;">
                 <h2>Gestão de Associados</h2>
             </div>
 
+            <!-- Dados Gerais -->
             <div class="secao-associados">
                 <div class="secao-header">
                     <h3 class="secao-titulo">Dados Gerais <span class="secao-sub">(visíveis na Área do Associado)</span></h3>
@@ -320,6 +324,7 @@
                 </div>
             </div>
 
+            <!-- Composição da Diretoria -->
             <div class="secao-associados">
                 <div class="secao-header">
                     <h3 class="secao-titulo">Composição da Diretoria</h3>
@@ -349,7 +354,7 @@
                 </div>
             </div>
 
-
+            <!-- Cadastro de Associados -->
             <div class="secao-associados">
                 <div class="secao-header" style="margin-bottom: 20px;">
                     <h3 class="secao-titulo">Cadastro de Associados</h3>
@@ -359,6 +364,7 @@
                     </button>
                 </div>
 
+                <!-- Filtros -->
                 <div class="filtros-bar">
                     <div class="filtro-group">
                         <label>Pesquisar por nome</label>
@@ -381,6 +387,7 @@
                     </div>
                 </div>
 
+                <!-- Lista de associados -->
                 <div class="admin-list" id="lista-associados">
 
                     <div class="associado-card" data-nome="Ana Paula Costa" data-status="ativo">
@@ -476,5 +483,257 @@
     </main>
 
     <script src="/scripts/admin.js"></script>
+    <script src="/scripts/site-header.js"></script>
+
+    <!-- ═══════════════════════════════════════════
+         MODAL — Adicionar Conteúdo
+    ════════════════════════════════════════════ -->
+    <div class="modal-overlay" id="modal-conteudo" style="display:none;">
+        <div class="modal">
+
+            <div class="modal-header">
+                <h2>Adicionar Conteúdo</h2>
+                <button class="modal-close" onclick="fecharModal('modal-conteudo')">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+
+            <form class="modal-form" onsubmit="return false;">
+
+                <div class="form-field">
+                    <label>Imagem de Capa</label>
+                    <div class="upload-area" id="upload-conteudo-area">
+                        <div class="upload-placeholder">
+                            <i class="bi bi-upload"></i>
+                            <span class="upload-titulo">Clique para fazer upload da imagem</span>
+                            <span class="upload-sub">PNG, JPG até 5MB</span>
+                        </div>
+                        <img class="upload-preview" src="" alt="Preview" style="display:none;">
+                        <input type="file" id="upload-conteudo-input" accept="image/png,image/jpeg" style="display:none;">
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label>Título <span class="obrigatorio">*</span></label>
+                    <input type="text" placeholder="Título" required>
+                </div>
+
+                <div class="form-field">
+                    <label>Descrição <span class="obrigatorio">*</span></label>
+                    <textarea placeholder="Escreva a descrição..." rows="5" required></textarea>
+                </div>
+
+                <div class="form-field">
+                    <label>Tipo de Conteúdo <span class="obrigatorio">*</span></label>
+                    <select required>
+                        <option value="" disabled selected>Selecione o tipo</option>
+                        <option>Artigo</option>
+                        <option>Livro</option>
+                        <option>Relatório</option>
+                        <option>Vídeo</option>
+                        <option>Outro</option>
+                    </select>
+                </div>
+
+                <div class="modal-actions">
+                    <button type="button" class="btn-rascunho" onclick="fecharModal('modal-conteudo')">
+                        Salvar como Rascunho
+                    </button>
+                    <button type="submit" class="btn-publicar">
+                        Publicar
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════════
+         MODAL — Adicionar Curso
+    ════════════════════════════════════════════ -->
+    <div class="modal-overlay" id="modal-curso" style="display:none;">
+        <div class="modal">
+
+            <div class="modal-header">
+                <h2>Adicionar Curso</h2>
+                <button class="modal-close" onclick="fecharModal('modal-curso')">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+
+            <form class="modal-form" onsubmit="return false;">
+
+                <div class="form-field">
+                    <label>Imagem de Capa</label>
+                    <div class="upload-area" id="upload-curso-area">
+                        <div class="upload-placeholder">
+                            <i class="bi bi-upload"></i>
+                            <span class="upload-titulo">Clique para fazer upload da imagem</span>
+                            <span class="upload-sub">PNG, JPG até 5MB</span>
+                        </div>
+                        <img class="upload-preview" src="" alt="Preview" style="display:none;">
+                        <input type="file" id="upload-curso-input" accept="image/png,image/jpeg" style="display:none;">
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label>Título <span class="obrigatorio">*</span></label>
+                    <input type="text" placeholder="Título" required>
+                </div>
+
+                <div class="form-field">
+                    <label>Descrição <span class="obrigatorio">*</span></label>
+                    <textarea placeholder="Escreva a descrição..." rows="5" required></textarea>
+                </div>
+
+                <div class="form-row-2">
+                    <div class="form-field">
+                        <label>Duração <span class="obrigatorio">*</span></label>
+                        <input type="text" placeholder="Ex: 8 horas" required>
+                    </div>
+                    <div class="form-field">
+                        <label>Responsável pelo Curso <span class="obrigatorio">*</span></label>
+                        <input type="text" placeholder="Nome do responsável" required>
+                    </div>
+                </div>
+
+                <div class="modal-actions">
+                    <button type="button" class="btn-rascunho" onclick="fecharModal('modal-curso')">
+                        Salvar como Rascunho
+                    </button>
+                    <button type="submit" class="btn-publicar">
+                        Publicar
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════════
+         MODAL — Adicionar Projeto
+    ════════════════════════════════════════════ -->
+    <div class="modal-overlay" id="modal-projeto" style="display:none;">
+        <div class="modal">
+
+            <div class="modal-header">
+                <h2>Adicionar Projeto</h2>
+                <button class="modal-close" onclick="fecharModal('modal-projeto')">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+
+            <form class="modal-form" onsubmit="return false;">
+
+                <div class="form-field">
+                    <label>Imagem de Capa</label>
+                    <div class="upload-area" id="upload-projeto-area">
+                        <div class="upload-placeholder">
+                            <i class="bi bi-upload"></i>
+                            <span class="upload-titulo">Clique para fazer upload da imagem</span>
+                            <span class="upload-sub">PNG, JPG até 5MB</span>
+                        </div>
+                        <img class="upload-preview" src="" alt="Preview" style="display:none;">
+                        <input type="file" id="upload-projeto-input" accept="image/png,image/jpeg" style="display:none;">
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label>Nome do Projeto <span class="obrigatorio">*</span></label>
+                    <input type="text" placeholder="Nome do projeto" required>
+                </div>
+
+                <div class="form-field">
+                    <label>Descrição <span class="obrigatorio">*</span></label>
+                    <textarea placeholder="Escreva a descrição..." rows="5" required></textarea>
+                </div>
+
+                <div class="form-row-2">
+                    <div class="form-field">
+                        <label>Tipo de Projeto <span class="obrigatorio">*</span></label>
+                        <select id="proj-tipo" required>
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="restauro">Projeto de Restauro</option>
+                            <option value="educacional">Projeto Educacional (APRI)</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label>Status <span class="obrigatorio">*</span></label>
+                        <select required>
+                            <option value="" disabled selected>Selecione</option>
+                            <option>Em andamento</option>
+                            <option>Planejamento</option>
+                            <option>Concluído</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Campos financeiros — só para Educacional -->
+                <div class="form-row-2" id="proj-campos-financeiros" style="display:none;">
+                    <div class="form-field">
+                        <label>Meta de Arrecadação (R$) <span class="obrigatorio">*</span></label>
+                        <input type="number" placeholder="0.00" min="0" step="0.01">
+                    </div>
+                    <div class="form-field">
+                        <label>Valor Arrecadado (R$)</label>
+                        <input type="number" placeholder="0.00" min="0" step="0.01">
+                    </div>
+                </div>
+
+                <div class="modal-actions">
+                    <button type="button" class="btn-rascunho" onclick="fecharModal('modal-projeto')">
+                        Salvar como Rascunho
+                    </button>
+                    <button type="submit" class="btn-publicar">
+                        Publicar
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+<footer>
+        <div>
+            <img src="/imagens/Logo-APRI.png" alt="logo apri de itu">
+            <p>Associal pró-restauro do patrimonio historico de Itu. Preservando a história para as futuras gerações.</p>
+            <ul>
+                <li><a href="https://www.instagram.com/apriitu/"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/apriitu"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="https://www.youtube.com/apriitu"><i class="bi bi-youtube"></i></a></li>
+            </ul>
+        
+        </div>
+        <div>
+            <h2>Navegação</h2>
+                <a href="/index.html">Inicio</a>
+                <a href="/pages/patrono.html">Patrono</a>
+                <a href="/pages/blog.html">Blog</a>
+        </div>
+        <div>
+            <h2>Mais</h2>
+                <a href="">Seja um Patrono</a>
+                <a href="">Parceiros</a>
+                <a href="">Sobre a Associação</a>
+                <a href="">Contato</a>
+        </div>
+        <div>
+
+            <h2>Contato</h2>
+                    <i class="bi bi-geo-alt"></i>
+                    <span>Rua José Berto, 68 - Itu/SP</span>
+                    <i class="bi bi-telephone"></i>
+                    <span>(11) 4023-5678</span>
+                    <i class="bi bi-envelope"></i>
+                    <span>contato@patrimonio</span>
+        </div>
+        
+    </footer>
+    <div id="direitos">
+        <hr>
+        <p>© 2026 APRI — Associação Pró-Restauro de Itu — CNPJ 12.345.678/0001-90</p>
+    </div>
+
 </body>
 </html>
