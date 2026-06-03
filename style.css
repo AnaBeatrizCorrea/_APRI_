@@ -1081,3 +1081,164 @@ button:hover{
 .associado-detalhes p {
     margin: 0;
 }
+.cc-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 4rem;
+}
+
+.cc-card {
+  flex: 0 0 calc(50% - 8px);
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid rgba(181, 140, 30, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 4px 16px rgba(181, 140, 30, 0.15);
+  text-decoration: none;
+  color: inherit;
+}
+
+.cc-card:visited{
+  color: inherit;
+}
+.cc-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.cc-date {
+  text-align: end;
+  font-size: 13px;
+  color: #6b6b6b;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+.cc-title {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  color: #4B1919;
+  margin: 0;
+}
+
+.cc-desc {
+  text-align: left;
+  font-size: 14px;
+  color: #6b6b6b;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  flex: 1;
+}
+
+.cc-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--rose);
+  color:var(--bg);
+  font-size: 15px;
+  font-weight: 600;
+  padding: 14px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  transition: background 0.2s;
+  margin-top: auto;
+}
+
+.cc-btn:hover {
+  background: #A62D37;
+}
+
+.cc-link-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 2rem;
+}
+.cc-tabs {
+  display: flex;
+  gap: 2rem;
+  border-bottom: 1px solid rgba(181, 140, 30, 0.3);
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.cc-tab {
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: 1rem 0;
+  font-size: 16px;
+  color: #6b6b6b;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  margin-bottom: -1px;
+  transition: color 0.2s;
+}
+
+.cc-tab--ativo {
+  color: #4B1919;
+  font-weight: 700;
+  border-bottom-color: #A62D37;
+}
+.hero {
+  background-image: 
+    linear-gradient(rgba(60, 10, 10, 0.7), rgba(60, 10, 10, 0.7)),
+    url('imagem_rua_docarmo.jpeg');
+  background-size: cover;
+  background-position: center;
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  padding: 4rem 6rem;
+}
+
+.hero-subtitulo {
+  color: #dbad38;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin: 0 0 1rem;
+  font-family: "Lato", sans-serif;
+}
+
+.hero-titulo {
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0 0 1rem;
+  max-width: 600px;
+}
+
+.hero-destaque {
+  color: #dbad38;
+  font-style: italic;
+}
+
+.hero-desc {
+  color: #f5f5f5;
+  font-size: 1.1rem;
+  max-width: 500px;
+  margin: 0 0 1.5rem;
+  font-family: "Lato", sans-serif;
+}
+
+.hero-link {
+  color: #dbad38;
+  font-size: 1rem;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+}
+
+.hero-link:hover {
+  text-decoration: underline;
+}
