@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,118 +14,211 @@
 </head>
 <body>
     <div id="site-header" data-cta-text="Entrar" data-cta-class="btn2"></div>
-    
+
     <section class="secao_vermelha">
         <p class="titulo1">Cursos APRI</p>
         <hr class="linha">
-        <p class="texto1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore eius culpa laboriosam, asperiores fugiat laudantium cupiditate earum, quae, temporibus corrupti iste ipsa tempora similique. Placeat omnis sequi aliquid ad reprehenderit.</p>
+        <p class="texto1">Cursos de educação patrimonial ministrados pela própria associação.</p>
     </section>
 
-    <section class="secao_bege1">
-        <div class="cards">
-            <div class="card1">
-                <img src="/imagens/Igreja_matriz_de_Itu.jpg" alt="Curso 1">
-                <p class="titulo3">Título do Curso</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non repellendus perspiciatis aperiam voluptates veniam dignissimos accusantium quaerat temporibus cum ut unde cupiditate quae voluptatum esse soluta quas, aliquid sunt! Iure!</p>
-                <button class="btn-dourado">inscreva-se</button>
+    <div class="cursos-filtro">
+        <label for="curso-filter">Filtrar por categoria</label>
+        <select id="curso-filter">
+            <option value="Todos">Todos</option>
+            <option value="Historia">História</option>
+            <option value="Preservacao">Preservação</option>
+            <option value="Arquitetura">Arquitetura</option>
+            <option value="Patrimonio">Patrimônio</option>
+        </select>
+    </div>
+
+    <section class="secao_bege1" style="padding: 0 0 4rem; box-shadow: none;">
+        <div class="cursos-grid" id="cursos-container">
+
+            <div class="curso-card" data-categoria="Historia">
+                <div class="curso-card-img">
+                    <img src="https://images.unsplash.com/photo-1555681102-b797fb73aa6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800" alt="História e Patrimônio de Itu">
+                    <span class="curso-badge badge-historia">História</span>
+                </div>
+                <div class="curso-card-body">
+                    <p class="titulo3">História e Patrimônio de Itu</p>
+                    <p>Conheça a trajetória histórica da cidade desde sua fundação até os dias atuais.</p>
+                    <div class="curso-meta">
+                        <div class="curso-meta-item"><i class="bi bi-clock"></i> Duração: 8 horas</div>
+                        <div class="curso-meta-item"><i class="bi bi-people"></i> 30 vagas disponíveis</div>
+                        <div class="curso-meta-item"><i class="bi bi-calendar3"></i> Próxima turma: 15 Jun 2026</div>
+                    </div>
+                    <a href="/pages/contato.html" class="btn-dourado">Inscreva-se</a>
+                </div>
             </div>
-            <div class="card1">
-                <img src="/imagens/Igreja_matriz_de_Itu.jpg" alt="Curso 1">
-                <p class="titulo3">Título do Curso</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non repellendus perspiciatis aperiam voluptates veniam dignissimos accusantium quaerat temporibus cum ut unde cupiditate quae voluptatum esse soluta quas, aliquid sunt! Iure!</p>
-                <button class="btn-dourado">inscreva-se</button>
+
+            <div class="curso-card" data-categoria="Preservacao">
+                <div class="curso-card-img">
+                    <img src="https://images.unsplash.com/photo-1670423292485-6b51f3f3a3a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800" alt="Introdução à Conservação Patrimonial">
+                    <span class="curso-badge badge-preservacao">Preservação</span>
+                </div>
+                <div class="curso-card-body">
+                    <p class="titulo3">Introdução à Conservação Patrimonial</p>
+                    <p>Conceitos fundamentais de conservação e preservação do patrimônio histórico.</p>
+                    <div class="curso-meta">
+                        <div class="curso-meta-item"><i class="bi bi-clock"></i> Duração: 12 horas</div>
+                        <div class="curso-meta-item"><i class="bi bi-people"></i> 25 vagas disponíveis</div>
+                        <div class="curso-meta-item"><i class="bi bi-calendar3"></i> Próxima turma: 22 Jun 2026</div>
+                    </div>
+                    <a href="/pages/contato.html" class="btn-dourado">Inscreva-se</a>
+                </div>
             </div>
-            <div class="card1">
-                <img src="/imagens/Igreja_matriz_de_Itu.jpg" alt="Curso 1">
-                <p class="titulo3">Título do Curso</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non repellendus perspiciatis aperiam voluptates veniam dignissimos accusantium quaerat temporibus cum ut unde cupiditate quae voluptatum esse soluta quas, aliquid sunt! Iure!</p>
-                <button class="btn-dourado">inscreva-se</button>
+
+            <div class="curso-card" data-categoria="Arquitetura">
+                <div class="curso-card-img">
+                    <img src="https://images.unsplash.com/photo-1668163205979-d808f8ed0080?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800" alt="Arquitetura Colonial Paulista">
+                    <span class="curso-badge badge-arquitetura">Arquitetura</span>
+                </div>
+                <div class="curso-card-body">
+                    <p class="titulo3">Arquitetura Colonial Paulista</p>
+                    <p>Estudo das características arquitetônicas do período colonial no interior de São Paulo.</p>
+                    <div class="curso-meta">
+                        <div class="curso-meta-item"><i class="bi bi-clock"></i> Duração: 10 horas</div>
+                        <div class="curso-meta-item"><i class="bi bi-people"></i> 20 vagas disponíveis</div>
+                        <div class="curso-meta-item"><i class="bi bi-calendar3"></i> Próxima turma: 05 Jul 2026</div>
+                    </div>
+                    <a href="/pages/contato.html" class="btn-dourado">Inscreva-se</a>
+                </div>
             </div>
-        </div>
-        
-        <div class="cards">
-            <div class="card1">
-                <img src="/imagens/Igreja_matriz_de_Itu.jpg" alt="Curso 1">
-                <p class="titulo3">Título do Curso</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <button class="btn-dourado">inscreva-se</button>
+
+            <div class="curso-card" data-categoria="Patrimonio">
+                <div class="curso-card-img">
+                    <img src="/imagens/Igreja_matriz_de_Itu.jpg" alt="Patrimônio Religioso de Itu">
+                    <span class="curso-badge badge-patrimonio">Patrimônio</span>
+                </div>
+                <div class="curso-card-body">
+                    <p class="titulo3">Patrimônio Religioso de Itu</p>
+                    <p>Explore a riqueza dos bens religiosos tombados na cidade e sua importância cultural.</p>
+                    <div class="curso-meta">
+                        <div class="curso-meta-item"><i class="bi bi-clock"></i> Duração: 6 horas</div>
+                        <div class="curso-meta-item"><i class="bi bi-people"></i> 35 vagas disponíveis</div>
+                        <div class="curso-meta-item"><i class="bi bi-calendar3"></i> Próxima turma: 12 Jul 2026</div>
+                    </div>
+                    <a href="/pages/contato.html" class="btn-dourado">Inscreva-se</a>
+                </div>
             </div>
-            <div class="card1">
-                <img src="/imagens/Igreja_matriz_de_Itu.jpg" alt="Curso 1">
-                <p class="titulo3">Título do Curso</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <button class="btn-dourado">inscreva-se</button>
+
+            <div class="curso-card" data-categoria="Historia">
+                <div class="curso-card-img">
+                    <img src="/imagens/Igreja_matriz_de_Itu.jpg" alt="A Revolução Constitucionalista em Itu">
+                    <span class="curso-badge badge-historia">História</span>
+                </div>
+                <div class="curso-card-body">
+                    <p class="titulo3">A Revolução Constitucionalista em Itu</p>
+                    <p>O papel de Itu nos eventos de 1932 e sua relevância para a história de São Paulo.</p>
+                    <div class="curso-meta">
+                        <div class="curso-meta-item"><i class="bi bi-clock"></i> Duração: 4 horas</div>
+                        <div class="curso-meta-item"><i class="bi bi-people"></i> 40 vagas disponíveis</div>
+                        <div class="curso-meta-item"><i class="bi bi-calendar3"></i> Próxima turma: 20 Jul 2026</div>
+                    </div>
+                    <a href="/pages/contato.html" class="btn-dourado">Inscreva-se</a>
+                </div>
             </div>
-            <div class="card1">
-                <img src="/imagens/Igreja_matriz_de_Itu.jpg" alt="Curso 1">
-                <p class="titulo3">Título do Curso</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <button class="btn-dourado">inscreva-se</button>
+
+            <div class="curso-card" data-categoria="Preservacao">
+                <div class="curso-card-img">
+                    <img src="/imagens/Igreja_matriz_de_Itu.jpg" alt="Técnicas de Restauro de Edificações">
+                    <span class="curso-badge badge-preservacao">Preservação</span>
+                </div>
+                <div class="curso-card-body">
+                    <p class="titulo3">Técnicas de Restauro de Edificações</p>
+                    <p>Práticas e metodologias de restauro aplicadas a edificações históricas tombadas.</p>
+                    <div class="curso-meta">
+                        <div class="curso-meta-item"><i class="bi bi-clock"></i> Duração: 16 horas</div>
+                        <div class="curso-meta-item"><i class="bi bi-people"></i> 15 vagas disponíveis</div>
+                        <div class="curso-meta-item"><i class="bi bi-calendar3"></i> Próxima turma: 03 Ago 2026</div>
+                    </div>
+                    <a href="/pages/contato.html" class="btn-dourado">Inscreva-se</a>
+                </div>
             </div>
+
         </div>
 
+        <p id="sem-resultados" style="display:none; color:#888; font-family:'Lato',sans-serif; font-size:1rem; padding: 3rem 0;">
+            Nenhum curso encontrado para esta categoria.
+        </p>
     </section>
+
     <section class="secao_bege2">
-            <p class="titulo2">Por que fazer nossos cursos?</p>
-            <hr class="linha">
-            <div class="cards">
-                <div class="card1">
-                    <i class="bi bi-person" style="font-size: 2.5rem;"></i>
-                    <p class="titulo3">Beneficios</p>
-                    <p class="texto2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate!</p>
-                </div>
-                <div class="card1">
-                    <i class="bi bi-person" style="font-size: 2.5rem;"></i>
-                    <p class="titulo3">Qualidade</p>
-                    <p class="texto2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate!</p>
-                </div>
-                <div class="card1">
-                    <i class="bi bi-person" style="font-size: 2.5rem;"></i>
-                    <p class="titulo3">Suporte</p>
-                    <p class="texto2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate!</p>
-                </div>
+        <p class="titulo2">Por que fazer nossos cursos?</p>
+        <hr class="linha">
+        <div class="cursos-vantagens">
+            <div class="vantagem-card">
+                <i class="bi bi-book"></i>
+                <p class="titulo3">Conhecimento Aplicado</p>
+                <p>Conteúdo prático voltado à realidade local e ao patrimônio de Itu.</p>
             </div>
+            <div class="vantagem-card">
+                <i class="bi bi-person-check"></i>
+                <p class="titulo3">Instrutores Qualificados</p>
+                <p>Profissionais experientes em patrimônio histórico e cultura regional.</p>
+            </div>
+            <div class="vantagem-card">
+                <i class="bi bi-patch-check"></i>
+                <p class="titulo3">Certificado APRI</p>
+                <p>Certificação reconhecida na área de patrimônio e restauro.</p>
+            </div>
+        </div>
     </section>
 
     <footer>
         <div>
             <img src="/imagens/Logo-APRI.png" alt="logo apri de itu">
-            <p>Associal pró-restauro do patrimonio historico de Itu. Preservando a história para as futuras gerações.</p>
+            <p>Associação Pró-Restauro de Itu. Preservando a história para as futuras gerações.</p>
             <ul>
                 <li><a href="https://www.instagram.com/apriitu/"><i class="bi bi-instagram"></i></a></li>
                 <li><a href="https://www.facebook.com/apriitu"><i class="bi bi-facebook"></i></a></li>
                 <li><a href="https://www.youtube.com/apriitu"><i class="bi bi-youtube"></i></a></li>
             </ul>
-        
         </div>
         <div>
             <h2>Navegação</h2>
-                <a href="/index.html">Inicio</a>
-                <a href="/pages/patrono.html">Patrono</a>
-                <a href="/pages/blog.html">Blog</a>
+            <a href="/index.html">Início</a>
+            <a href="/pages/patrono.html">Patrono</a>
+            <a href="/pages/blog.html">Blog</a>
         </div>
         <div>
             <h2>Mais</h2>
-                <a href="">Seja um Patrono</a>
-                <a href="">Parceiros</a>
-                <a href="">Sobre a Associação</a>
-                <a href="">Contato</a>
+            <a href="">Seja um Patrono</a>
+            <a href="">Parceiros</a>
+            <a href="">Sobre a Associação</a>
+            <a href="">Contato</a>
         </div>
         <div>
-
             <h2>Contato</h2>
-                    <i class="bi bi-geo-alt"></i>
-                    <span>Rua José Berto, 68 - Itu/SP</span>
-                    <i class="bi bi-telephone"></i>
-                    <span>(11) 4023-5678</span>
-                    <i class="bi bi-envelope"></i>
-                    <span>contato@patrimonio</span>
+            <i class="bi bi-geo-alt"></i>
+            <span>Rua Dr. José Elias, 9 - Centro, Itu, SP 13300-250</span>
+            <i class="bi bi-telephone"></i>
+            <span>(11) 2715-5878</span>
+            <i class="bi bi-envelope"></i>
+            <span>contato@apri.org.br</span>
         </div>
-        
     </footer>
     <div id="direitos">
         <hr>
-        <p>© 2026 APRI — Associação Pró-Restauro de Itu — CNPJ 12.345.678/0001-90</p>
+        <p>© 2026 APRI — Associação Pró-Restauro de Itu — CNPJ 64.547.893/0001-72</p>
     </div>
+
+    <script>
+        const filtro = document.getElementById('curso-filter');
+        const cards = document.querySelectorAll('.curso-card');
+        const semResultados = document.getElementById('sem-resultados');
+
+        filtro.addEventListener('change', () => {
+            const valor = filtro.value;
+            let visiveis = 0;
+            cards.forEach(card => {
+                const mostrar = valor === 'Todos' || card.dataset.categoria === valor;
+                card.style.display = mostrar ? '' : 'none';
+                if (mostrar) visiveis++;
+            });
+            semResultados.style.display = visiveis === 0 ? 'block' : 'none';
+        });
+    </script>
 </body>
 </html>
