@@ -1,9 +1,3 @@
-// ═══════════════════════════════════════════════════════════
-//  APRI — Painel Administrativo
-// ═══════════════════════════════════════════════════════════
-
-
-// ── Tab switching ───────────────────────────────────────────
 function fazerLogin(event) {
     event.preventDefault();
 
@@ -27,7 +21,6 @@ function switchTab(tabId, btn) {
 }
 
 
-// ── Expandir / recolher detalhes do associado ───────────────
 function toggleAssociado(btn) {
     const card     = btn.closest('.associado-card');
     const detalhes = card.nextElementSibling;
@@ -38,14 +31,11 @@ function toggleAssociado(btn) {
 }
 
 
-// ── Filtrar / ordenar associados ────────────────────────────
-// Guarda TODOS os pares em memória na primeira chamada
 let _todosAssociados = null;
 
 function filtrarAssociados() {
     const lista  = document.getElementById('lista-associados');
 
-    // Inicializa o cache uma única vez (ou quando o DOM estiver completo)
     if (!_todosAssociados) {
         _todosAssociados = [];
         const filhos = Array.from(lista.children);
@@ -58,38 +48,33 @@ function filtrarAssociados() {
     const status = document.getElementById('filtro-status').value;
     const ordem  = document.getElementById('ordenar').value;
 
-    // Filtra a partir do array completo em memória
     let visiveis = _todosAssociados.filter(({ card }) => {
         const nomeOk = card.dataset.nome.toLowerCase().includes(busca);
         const stOk   = status === '' || card.dataset.status === status;
         return nomeOk && stOk;
     });
 
-    // Ordena
+
     visiveis.sort((a, b) => {
         const na = a.card.dataset.nome;
         const nb = b.card.dataset.nome;
         return ordem === 'az' ? na.localeCompare(nb) : nb.localeCompare(na);
     });
 
-    // Reconstrói o DOM com todos (oculta os que não passam no filtro)
+    
     lista.innerHTML = '';
     _todosAssociados.forEach(({ card, detalhe }) => {
         const visivel = visiveis.includes({ card, detalhe }) ||
                         visiveis.some(v => v.card === card);
         card.style.display   = visivel ? '' : 'none';
-        detalhe.style.display = 'none'; // fecha detalhes ao filtrar
+        detalhe.style.display = 'none'; 
         lista.appendChild(card);
         lista.appendChild(detalhe);
     });
 }
 
 
-// ═══════════════════════════════════════════════════════════
-//  MODAIS
-// ═══════════════════════════════════════════════════════════
 
-// ── Utilitários ─────────────────────────────────────────────
 function abrirModal(id) {
     document.getElementById(id).style.display = 'flex';
     document.body.style.overflow = 'hidden';
@@ -98,10 +83,10 @@ function abrirModal(id) {
 function fecharModal(id) {
     document.getElementById(id).style.display = 'none';
     document.body.style.overflow = '';
-    // Limpa o formulário
+
     const form = document.querySelector(`#${id} form`);
     if (form) form.reset();
-    // Limpa preview de imagem
+  
     const preview = document.querySelector(`#${id} .upload-preview`);
     const uploadArea = document.querySelector(`#${id} .upload-area`);
     if (preview && uploadArea) {
@@ -110,14 +95,14 @@ function fecharModal(id) {
     }
 }
 
-// Fecha modal clicando no backdrop
+
 document.addEventListener('click', function(e) {
     if (e.target.classList.contains('modal-overlay')) {
         fecharModal(e.target.id);
     }
 });
 
-// Fecha com ESC
+
 document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
         document.querySelectorAll('.modal-overlay').forEach(m => {
@@ -127,7 +112,6 @@ document.addEventListener('keydown', function(e) {
 });
 
 
-// ── Upload de imagem — preview ───────────────────────────────
 function setupUpload(inputId, areaId) {
     const input = document.getElementById(inputId);
     const area  = document.getElementById(areaId);
@@ -166,20 +150,17 @@ function mostrarPreview(file, placeholder, preview) {
 }
 
 
-// ── Vincular botões "Adicionar" ──────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
-    // Botões que abrem cada modal
     const mapa = {
         'btn-add-conteudo':  'modal-conteudo',
         'btn-add-curso':     'modal-curso',
         'btn-add-projeto':   'modal-projeto',
     };
 
-    // Associa IDs aos botões pelo contexto (tab-panel)
     document.querySelectorAll('.btn-add').forEach(btn => {
         const panel = btn.closest('.tab-panel');
         if (!panel) return;
-        const tabId = panel.id; // ex: "tab-conteudos"
+        const tabId = panel.id; 
 
         if (tabId === 'tab-conteudos') btn.id = 'btn-add-conteudo';
         else if (tabId === 'tab-cursos')    btn.id = 'btn-add-curso';
@@ -191,12 +172,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Setup de upload para cada modal
     setupUpload('upload-conteudo-input', 'upload-conteudo-area');
     setupUpload('upload-curso-input',    'upload-curso-area');
     setupUpload('upload-projeto-input',  'upload-projeto-area');
 
-    // Mostrar/ocultar campos financeiros no modal de projeto
     const tipoProj = document.getElementById('proj-tipo');
     if (tipoProj) {
         tipoProj.addEventListener('change', () => {
