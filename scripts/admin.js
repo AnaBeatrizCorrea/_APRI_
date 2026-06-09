@@ -4,6 +4,21 @@
 
 
 // ── Tab switching ───────────────────────────────────────────
+function fazerLogin(event) {
+    event.preventDefault();
+
+    const usuario = document.getElementById('texto').value;
+    const senha = document.getElementById('password').value;
+
+    if (usuario === 'administrador' && senha === '1234') {
+        window.alert("Olá ADM")
+        window.location.href = 'area_adm.html';
+    } else {
+        alert('Usuário ou senha incorretos!');
+    }
+
+    return false;
+}
 function switchTab(tabId, btn) {
     document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
     document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));

@@ -24,11 +24,13 @@ html,body, section{
 }
 .texto1{
     color: var(--wire);
+    font-family: "lato", sans-serif;
     width: 50%;
     margin: 20px;
 }
 .texto2{
     color: var(--text);
+    font-family: "lato", sans-serif;
     margin: 20px;
 
 }
