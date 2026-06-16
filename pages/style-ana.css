@@ -282,6 +282,9 @@
 
 .participa-texto-p{
     font-size:0.8rem;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 30px;
 }
 
 .beneficios ul li{
@@ -637,4 +640,16 @@ ol{
 
 .baixa-listinha{
         padding-left: 10px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+}
+.beneficios p{
+    padding-top: 10px;
+}
+
+.linha-titulo{
+    display: inline-flex;
 }
