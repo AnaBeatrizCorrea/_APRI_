@@ -77,7 +77,7 @@
                 </div>
                 <div class="interessado">
                     <section class="interesse">
-                        <a href="#form-solicitacao-associado" class="as-doc-btn botao-patrono">Ir para o Formulário</a>
+                        <a href="" class="as-doc-btn botao-patrono">Baixar Estatuto Social</a>
                     </section>
                 </div>
             </div>
@@ -99,8 +99,24 @@
         </div>
     </section>
 
-    <!-- Formulário de Solicitação -->
+   
     <section class="secao_bege1" id="form-solicitacao-associado">
+            <div id="card-baixar" class="card-comoparticipar fundo-branco">
+                <div id="valorsimbolico" class="card-divisao">
+                    <div id="valorsimb-texto" class="texto-participa">
+                        <h3><i class="bi bi-cash-coin icone-correto"></i><b class="b-participa">Contribuição Financeira</b></h3>
+                        <p class="participa-texto-p">Como uma associação sem fins lucrativos, a APRI depende da taxa anual dos associados, paga semestralmente (maio e novembro).</p>
+                    </div>
+                            <div class="beneficios baixa-listinha">
+                            <ul id="baixa-lista">
+                                <li>O pedido de associação à APRI ocorre de forma digital, fornecendo os dados e preenchendo os pré-requisitos em um formulário digital.</li>
+                                <li>Os dados são recebidos pela diretoria que analisa no âmbito do Estatuto Social se o perfil se enquadra aos objetivos institucionais.</li>
+                                <li>Após aprovação pela diretoria, enviaremos os dados para pagamento da primeira taxa.</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
         <form class="formulario-patronos formulario" id="form-associado">
             <section id="titulo-formulario">
                 <h1>Solicite sua Associação</h1>
@@ -122,12 +138,18 @@
             </div>
 
             <div class="linha-form">
-                <label for="mensagem"><p class="paragrafo-form"><b>Por que quer participar?*</b></p></label>
+                <label for="mensagem"><p class="paragrafo-form"><b>Mensagem (opcional)</b></p></label>
             </div>  
             <div class="linha-form linhaun-form">
                 <textarea id="mensagem" placeholder="Conte-nos um pouco sobre seu interesse..." required></textarea>
             </div>
-
+            <div class="linha-form">
+                <label for="upload"><p class="paragrafo-form"><b>Anexar Ficha de Inscrição*</b></p></label>
+            </div>  
+            <div class="linha-form  linhaun-form">
+                <input type="file" name="upload" id="upload">
+            </div>  
+            
             <div class="linha-form linhaun-form">
                 <button type="submit" class="as-doc-btn botao-patrono btn-form-patro">Enviar Solicitação</button>
             </div>
