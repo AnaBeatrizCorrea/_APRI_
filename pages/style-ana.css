@@ -1,3 +1,18 @@
+:root{
+     --vermelho: #A62D37;
+    --rose: #A64951;
+    --dourado: #DBAD38;
+    --ambar: #D98B48;
+    --borgonha: #4B1919;
+    --bg: #F5F0EE;
+    --wire: #C4B5B0;
+    --wire-light: #E2D8D5;
+    --text: #2A1A1A;
+    --backgroundbtnlight: #8A6F6A;
+    --preto:rgb(15, 0, 0);
+    --branco:rgb(255,255,255);
+    --ambar-transp:rgba(217, 140, 72, 0.137); 
+} 
 #motivo-participa,
 .linhas-motivo {
     display: inline-flex;
@@ -67,7 +82,7 @@
 
 
 .card-patrono {
-    background-color: var(--branco);
+    background-color: var(--branco) !important;
     width: 350px;
     height: 250px;
     margin: 10px;
@@ -79,7 +94,8 @@
     display: flex;
     flex-direction: column;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    gap: 5%;
+    gap: 10%;
+    padding: 5%;
 }
 
 .caixa-patrono {
@@ -179,7 +195,7 @@
 }
 
 .texto-participa {
-    width: 70%;
+    width: 90%;
     font-size: 1rem;
 }
 
@@ -345,11 +361,8 @@
     padding: 1.3%;
     align-items: center;
 }
-/* ==========================================================================
-   REVISÃO E CORREÇÃO: ASSOCIADOS & PARCEIROS (APRI 2026)
-   ========================================================================== */
 
-/* --- 1. Ajustes de Fluxo e Margens Internas --- */
+
 #secao-sobre-associado,
 #secao-como-associar,
 #secao-tipos-parceiros,
@@ -360,13 +373,15 @@
 }
 
 #caixa_texto-associado {
-    background-color: var(--wire-light);
-    width: 60%;
-    margin: 0 auto 2rem auto;
+    background-color: var(--bg);
+    width: 100% !important;
     text-align: center;
 }
 
-/* --- 2. Grid de Benefícios e Tipos de Parceiros --- */
+.caixa_texto{
+    padding: 5% 0.5% 5% 0.5% !important;
+}
+
 #cards-beneficios-associado,
 #cards-tipos {
     display: flex;
@@ -376,7 +391,6 @@
     margin-top: 2rem;
 }
 
-/* Preserva a herança de ícones circulares do style-ana.css */
 #cards-tipos .card-patrono i,
 #cards-beneficios-associado .card-patrono i {
     background-color: var(--icone-fundo);
@@ -389,7 +403,6 @@
     margin-bottom: 0.5rem;
 }
 
-/* --- 3. Correção do Bloco de Processo Seletivo (Lista Numérica) --- */
 #cards-processo-associar {
     display: flex;
     flex-direction: column;
@@ -400,7 +413,6 @@
     margin: 2.5rem auto;
 }
 
-/* RESET CORRETIVO: Remove o ícone de 'check' injetado pelo estilo padrão da Ana */
 #cards-processo-associar .beneficios ul li::before {
     content: none !important; 
 }
@@ -422,7 +434,6 @@
     margin: 0.5rem 0;
 }
 
-/* --- 4. Exibição dos Destaques de Parcerias (Cards com Imagem) --- */
 #cards-destaques {
     display: flex;
     flex-direction: row;
@@ -468,7 +479,6 @@
     line-height: 1.5;
 }
 
-/* --- 5. Ajustes e Correções do Formulário de Associação --- */
 #form-solicitacao-associado {
     background-color: var(--icone-fundo-claro);
     padding: 4rem 0;
@@ -477,11 +487,9 @@
 #form-associado {
     background-color: var(--branco);
     margin: 0 auto;
-    width: 45vw; 
     padding: 2.5rem;
 }
 
-/* Sobrescreve os 80% do style.css para permitir que ocupem a linha inteira da Ana */
 #form-associado .linhaun-form input,
 #form-associado .linhaun-form textarea {
     width: 100% !important;
@@ -491,7 +499,7 @@
     min-height: 110px;
 }
 
-/* --- 6. Elementos Decorativos de Chamada --- */
+
 .secao_vermelha .sobre-card-icon {
     background: rgba(255, 255, 255, 0.15);
     color: var(--dourado);
@@ -503,5 +511,100 @@
     justify-content: center;
     margin-bottom: 0.5rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-associado{
+    width: 25%;
+    padding-top: 4%;
+    gap: 5%;
+    justify-content: normal;
+}
+
+
+.card-associado b{
+    font-size: 1.2rem;
+}
+
+.icone .bi{
+    padding-top: 2.5% !important;
+    padding-bottom: 0.5% !important;
+}
+
+.card-associado .icone{
+    padding: 0;
+    margin:0;
+}
+
+#secao-como-associar{
+    background-color: var(--ambar-transp) !important;
+}
+
+#secao-como-associar .card-comoparticipar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.processo-A li{
+    list-style-type: decimal;
+    display: list-item !important;
+}
+
+#participa-associ{
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+ol{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#card-comoassoci{
+    height:30rem;
+    justify-content: center;
+        padding-top: 3%;
+}
+
+#card-valorsimbolico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#valorsimb-texto{
+    display: inline-flex;
+    gap: 50px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10%;
+    padding-left: 35px;
+}
+
+#valorsimb-texto h3{
+    display: flex;
+    align-items: center;
+}
+
+#card-valorsimb{
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+#valor-simbolico{
+    padding: 10%;
+    align-items: center;
+    background-color: var(--ambar-transp);
+    border: 2px;
+    border-radius: 10%;
+    text-align: center;
 }
 
