@@ -5,10 +5,8 @@ function fazerLogin(event) {
     const senha = document.getElementById('password').value;
 
     if (usuario === 'administrador' && senha === '1234') {
-        window.alert("Olá ADM")
         window.location.href = 'area_adm.html';
     }else if(usuario === 'associado' && senha === '1234') {
-        window.alert("Olá Associado")
         window.location.href = 'area_associado.html';
     } else {
         alert('Usuário ou senha incorretos!');
