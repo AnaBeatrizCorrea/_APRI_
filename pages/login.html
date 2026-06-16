@@ -10,7 +10,7 @@
     <script src="/scripts/site-header.js" defer></script>
 </head>
 <body>
-    <div id="site-header" data-cta-text="Entrar" data-cta-class="btn btn-primary" data-cta-id="apadrinhar"></div>
+    <div id="site-header" data-cta-text="Entrar" data-cta-class="btn2"></div>
     <section class="secao_vermelha">
         <p class="titulo1">Área de Login</p>
         <hr class="linha">
@@ -18,7 +18,7 @@
     <section class="secao_bege">
         <div class="card1">
             <p class="titulo3">Entrar:</p>
-            <form action="/login" method="POST" class="formulario">
+            <form onsubmit="return fazerLogin(event)" class="formulario">
             <label for="texto">Usuário:</label>
             <input type="text" id="texto" name="texto" required>
             <br>
@@ -65,6 +65,6 @@
         <hr>
         <p>© 2026 APRI — Associação Pró-Restauro de Itu — CNPJ 12.345.678/0001-90</p>
     </div>
-    
+    <script src="/scripts/admin.js"></script>
 </body>
 </html>

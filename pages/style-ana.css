@@ -1,0 +1,669 @@
+:root{
+     --vermelho: #A62D37;
+    --rose: #A64951;
+    --dourado: #DBAD38;
+    --ambar: #D98B48;
+    --borgonha: #4B1919;
+    --bg: #F5F0EE;
+    --wire: #C4B5B0;
+    --wire-light: #E2D8D5;
+    --text: #2A1A1A;
+    --backgroundbtnlight: #8A6F6A;
+    --preto:rgb(15, 0, 0);
+    --branco:rgb(255,255,255);
+    --ambar-transp:rgba(217, 140, 72, 0.137); 
+} 
+#motivo-participa,
+.linhas-motivo {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    background-color: var(--icone-fundo-claro);
+    gap: 10%;
+    padding: 2%;
+}
+
+
+#motivo-participa .caixa_texto {
+    width: 30%;
+}
+
+#motivo-participa section {
+    display: flex;
+    background-color: var(--icone-fundo-claro);
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+#motivo-participa section hr {
+    margin-top: 5%;
+}
+
+#titulo-participar h1, #titulo-formulario h1{
+    padding-top: 13.5%;
+    padding-bottom: 5%;
+}
+
+#cards-patrono i {
+    background-color: var(--icone-fundo);
+    color: var(--rose);
+    border-radius: 55%;
+    padding: 3%;
+    margin-bottom: 50%;
+    font-size: 150%;
+}
+
+#cards-patrono,
+.separacao-cards {
+    padding: 0%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#cards-patrono {
+    display: inline-flex;
+    margin-top: 2.5rem;
+    margin-bottom: 5rem
+}
+
+.icone {
+    margin: 5%;
+    padding: 1%;
+}
+
+.separacao-cards {
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+
+.card-patrono {
+    background-color: var(--branco) !important;
+    width: 350px;
+    height: 250px;
+    margin: 10px;
+    border: #DBAD38 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    gap: 10%;
+    padding: 5%;
+}
+
+.caixa-patrono {
+    padding: 2%;
+    width: 40% !important;
+    background-color: var(--icone-fundo-claro);
+}
+
+.icone-correto {
+    color: var(--dourado);
+    font-size: 200%;
+    height: auto;
+    padding-top: 2%;
+    padding-right: 2%;
+}
+
+#caixa_texto-patrono {
+    background-color: var(--bg);
+}
+
+#secao-participar {
+    background-color: var(--icone-fundo-claro);
+    padding-top: 0px;
+}
+
+#secao-cards {
+    padding-bottom: 0;
+}
+
+.card1 #h2-diferenca {
+    font-family: "playfair-display", serif;
+    font-size: 2.5rem;
+    color: var(--borgonha);
+    margin-top: 3rem;
+}
+
+#card-queroser {
+    width: 60%;
+    height: 26rem;
+    border: solid var(--dourado) 3.5px;
+    padding: 5%;
+    align-items: center;
+}
+
+.botao-patrono {
+    border: 0;
+    width: 19rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    justify-content: center;
+    font-family: "Lato", sans-serif;
+}
+
+.linhas-motivo {
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.card-comoparticipar {
+    background-color: var(--branco);
+    width: 95%;
+    padding: 3%;
+    padding-top: 5%;
+    height: 40rem;
+    margin: 10px;
+    border: #DBAD38 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: start;
+    font-size: medium;
+    display: flex;
+    flex-direction:row;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: start;
+}
+
+#cards-comoparticipar {
+    padding: 0%;
+    max-width: 80%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+    text-align: start;
+}
+
+.participa-p {
+    color: rgb(166, 45, 55);
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0;
+}
+
+.texto-participa {
+    width: 90%;
+    font-size: 1rem;
+}
+
+.titulo-participa {
+    padding-left: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#titulo-participar h1{
+    padding-top: 10%;
+    padding-bottom: 0;
+}
+.titulo-caixa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo-formulario{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--branco);
+    padding-bottom: 4%;
+}
+
+#paragrafo-diferenca{
+    margin: 0.5rem;
+    font-size: 1rem;
+}
+
+.formulario-patronos{
+    width:80%;
+    gap: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.linha-form{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 10%;
+    justify-content: start;
+    align-items: center;
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.paragrafo-form{
+    width:100%;
+    text-align:start;
+    font-size: 1rem;
+    padding: 0;
+    padding-left: 1%;
+}
+
+.formulario-patronos select{
+    border: 1px solid var(--dourado);
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 14px;
+    color: var(--text);
+    background-color: transparent;
+    width: 100%;
+}
+
+.btn-form-patro, .linhaun-form input, .linhaun-form textarea{
+    width: 100%;
+}
+
+.formulario-patronos label{
+    width: 80%;
+}
+
+#form-patrono{
+    background-color: var(--icone-fundo-claro);
+}
+
+.participa-texto-p{
+    font-size:0.8rem;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+}
+
+.beneficios ul li{
+    display: flex;
+    align-items: center;
+}
+.beneficios ul li::before{
+    font-family: "bootstrap-icons"; 
+    content: "\F272"; /* Código Unicode do ícone (ex: check-circle) */
+    color: var(--dourado); /* Cor de sucesso do Bootstrap (verde) */
+    display: inline-block;
+    width: 1em;
+    font-size: 1rem;
+}
+
+.b-participa, .participa-p, .beneficios{
+    padding-left: 5%;
+}
+
+.card-divisao{
+    width: 75% !important ; 
+}
+
+.interessado{
+    display: flex;
+    align-items: center;
+    width:24%;
+}
+
+.interesse{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    border-radius: 15px;
+    align-items: center;
+    flex-direction: column;
+    padding: 10%;
+    gap: 10%;
+    justify-content: center;
+}
+
+
+#btn-interesse-associado{
+    width: 80%;
+    font-size: 60%;
+    margin: 2%;
+}
+
+.interesse p{
+    padding: 0.5rem;
+}
+
+.fundo-branco{
+    background-color: var(--branco);
+}
+
+.fundo-branco h3{
+    display:inline-flex;
+    padding-top: 5%;
+}
+
+.texto1{
+    font-size: 1rem !important;
+}
+
+#texto1-duvida{
+    padding: 0;
+}
+
+#botao-duvida{
+    background-color: var(--dourado);
+    color: var(--borgonha);
+    width: 13rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 1.3%;
+    align-items: center;
+}
+
+
+#secao-sobre-associado,
+#secao-como-associar,
+#secao-tipos-parceiros,
+#secao-nossos-parceiros,
+#secao-destaque-parcerias {
+    background-color: var(--bg);
+    padding-bottom: 4rem;
+}
+
+#caixa_texto-associado {
+    background-color: var(--bg);
+    width: 100% !important;
+    text-align: center;
+}
+
+.caixa_texto{
+    padding: 5% 3% 5% 3% !important;
+    justify-content: center;
+}
+
+.caixa-diferenca h3 {
+        text-align: left;
+        gap: 10px;
+        padding-left: 10px;
+        align-items: center;
+}
+
+.caixa-diferenca{
+padding: 2%, 0.5%, 2%, 0.5% !important;
+}
+#cards-beneficios-associado,
+#cards-tipos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Corrigido para não forçar quebra na altura fixa do .card-patrono */
+    width: 100%;
+    margin-top: 2rem;
+}
+
+#cards-tipos .card-patrono i,
+#cards-beneficios-associado .card-patrono i {
+    background-color: var(--icone-fundo);
+    color: var(--rose);
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 1.8rem;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#cards-processo-associar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 80%;
+    margin: 2.5rem auto;
+}
+
+#cards-processo-associar .beneficios ul li::before {
+    content: none !important; 
+}
+
+#cards-processo-associar .beneficios ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    font-size: 1rem;
+    text-align: start;
+    list-style-type: decimal !important; /* Força os números ordinais do Figma */
+    padding-left: 1.5rem; /* Abre espaço para a numeração não sumir da tela */
+}
+
+#cards-processo-associar .beneficios h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    color: var(--vermelho);
+    margin: 0.5rem 0;
+}
+
+#cards-destaques {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+    width: 85%;
+    margin: 2rem auto;
+}
+
+#cards-destaques .card1 {
+    flex: 1 1 300px;
+    max-width: 350px;
+    min-height: 420px;
+    justify-content: flex-start; 
+    background-color: var(--branco);
+    overflow: hidden; 
+}
+
+#cards-destaques .card1 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    border-bottom: 1px solid var(--wire-light);
+}
+
+#cards-destaques .card1 h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.4rem;
+    color: var(--borgonha);
+    padding: 1rem 1.2rem 0.2rem 1.2rem;
+    text-align: start;
+}
+
+#cards-destaques .card1 p {
+    font-family: "Lato", sans-serif;
+    font-size: 0.95rem;
+    color: var(--text);
+    padding: 0.5rem 1.2rem 1.2rem 1.2rem;
+    text-align: start;
+    line-height: 1.5;
+}
+
+#form-solicitacao-associado {
+    background-color: var(--icone-fundo-claro);
+    padding: 4rem 0;
+}
+
+#form-associado {
+    background-color: var(--branco);
+    margin: 0 auto;
+    padding: 2.5rem;
+}
+
+#form-associado .linhaun-form input,
+#form-associado .linhaun-form textarea {
+    width: 100% !important;
+}
+
+#form-associado textarea {
+    min-height: 110px;
+}
+
+
+.secao_vermelha .sobre-card-icon {
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--dourado);
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-associado{
+    width: 25%;
+    padding-top: 4%;
+    gap: 5%;
+    justify-content: normal;
+}
+
+
+.card-associado b{
+    font-size: 1.2rem;
+}
+
+.icone .bi{
+    padding-top: 2.5% !important;
+    padding-bottom: 0.5% !important;
+}
+
+.card-associado .icone{
+    padding: 0;
+    margin:0;
+}
+
+#secao-como-associar{
+    background-color: var(--ambar-transp) !important;
+}
+
+#secao-como-associar .card-comoparticipar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.processo-A li{
+    list-style-type: decimal;
+    display: list-item !important;
+}
+
+#participa-associ{
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+ol{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#card-comoassoci{
+    height:30rem;
+    justify-content: center;
+        padding-top: 3%;
+}
+
+#card-valorsimbolico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#valorsimb-texto{
+    display: inline-flex;
+    gap: 50px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10%;
+    padding-left: 35px;
+}
+
+#valorsimb-texto h3{
+    display: flex;
+    align-items: center;
+}
+
+#card-valorsimb{
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 20px;
+    margin:0; 
+}
+
+#valor-simbolico{
+    padding: 10%;
+    align-items: center;
+    background-color: var(--ambar-transp);
+    border: 2px;
+    border-radius: 10%;
+    text-align: center;
+}
+
+::-webkit-file-upload-button{
+    display: none;
+}
+
+#card-baixar{
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 20px;
+    margin:0; 
+    width: 80%;
+}
+
+
+#baixa-lista{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#baixa-lista li::before{
+    content: none!important;
+    display: none !important; 
+
+}
+
+.baixa-listinha{
+        padding-left: 10px;
+}
+
+.beneficios ul, .baixa-lista ul{
+    display: flex;
+    flex-direction: column;
+}
+.beneficios p{
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.linha-titulo{
+    display: inline-flex;
+}
+
+.p-motivo{
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
