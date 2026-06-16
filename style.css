@@ -50,6 +50,9 @@ html,body, section{
     color: var(--borgonha);
     margin: 10px;
 }
+.primeiro{
+  margin: 0% 20% 0% 20%;
+}
 header, footer{
     font-family: "lato", sans-serif;
     letter-spacing: 0.03em;
@@ -407,6 +410,7 @@ button:hover{
   font-size: 18px;
   color: #E2D8D5;
   margin: 0;
+  font-family: "lato", sans-serif;
 }
 
 .contato {
@@ -428,7 +432,7 @@ button:hover{
 
 .linha-dourada {
   border: none;
-  border-top: 2px solid #c8a96e;
+  border-top: 2px solid var(--dourado);
   width: 60px;
   margin: 0;
 }
@@ -464,12 +468,12 @@ button:hover{
   height: 48px;
   min-width: 48px;
   border-radius: 50%;
-  border: 1.5px solid #c8a96e;
+  border: 1.5px solid var(--dourado);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 22px;
-  color: #c8a96e;
+  color: var(--dourado);
   background: transparent;
 }
 
@@ -485,6 +489,7 @@ button:hover{
   font-size: 13px;
   color: #333;
   line-height: 1.5;
+  font-family: "lato", sans-serif;
 }
 
 .form-container {
@@ -494,6 +499,7 @@ button:hover{
   background: #f5f0e8;
   flex: 1;
   box-sizing: border-box;
+  font-family: "lato", sans-serif;
 }
 
 .form-row {
@@ -507,6 +513,7 @@ button:hover{
   flex-direction: column;
   gap: 6px;
   flex: 1;
+  font-family: "lato", sans-serif;
 }
 
 .form-group.full {
@@ -531,6 +538,7 @@ button:hover{
   outline: none;
   width: 100%;
   box-sizing: border-box;
+  font-family: "lato", sans-serif;
 }
 
 .form-group textarea {
@@ -545,7 +553,7 @@ button:hover{
 }
 
 .form-submit button {
-  background: #c8a96e;
+  background: var(--dourado);
   color: #2a1a0e;
   border: none;
   border-radius: 30px;
@@ -556,7 +564,7 @@ button:hover{
 }
 
 .form-submit button:hover {
-  background: #b8923a;
+  background: var(--ambar);
 }
 
 #corpo-projetos{
@@ -1779,7 +1787,7 @@ footer.sobre-footer a {
 }
 
 .form-submit button {
-  background: #c8a96e;
+  background: var(--dourado);
   color: #2a1a0e;
   border: none;
   border-radius: 30px;

@@ -112,10 +112,6 @@
     padding-right: 2%;
 }
 
-.p-motivo {
-    padding-left: 10%;
-}
-
 #caixa_texto-patrono {
     background-color: var(--bg);
 }
@@ -329,7 +325,7 @@
 
 #btn-interesse-associado{
     width: 80%;
-    font-size: 0.8em;
+    font-size: 60%;
     margin: 2%;
 }
 
@@ -382,9 +378,20 @@
 }
 
 .caixa_texto{
-    padding: 5% 0.5% 5% 0.5% !important;
+    padding: 5% 3% 5% 3% !important;
+    justify-content: center;
 }
 
+.caixa-diferenca h3 {
+        text-align: left;
+        gap: 10px;
+        padding-left: 10px;
+        align-items: center;
+}
+
+.caixa-diferenca{
+padding: 2%, 0.5%, 2%, 0.5% !important;
+}
 #cards-beneficios-associado,
 #cards-tipos {
     display: flex;
@@ -642,14 +649,21 @@ ol{
         padding-left: 10px;
 }
 
-ul{
+.beneficios ul, .baixa-lista ul{
     display: flex;
     flex-direction: column;
 }
 .beneficios p{
     padding-top: 10px;
+    padding-bottom: 15px;
 }
 
 .linha-titulo{
     display: inline-flex;
+}
+
+.p-motivo{
+    align-content: center;
+    align-items: center;
+    text-align: center;
 }
