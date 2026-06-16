@@ -597,6 +597,7 @@ ol{
     justify-content: center;
     padding-top: 0;
     padding-bottom: 20px;
+    margin:0; 
 }
 
 #valor-simbolico{
@@ -608,3 +609,32 @@ ol{
     text-align: center;
 }
 
+::-webkit-file-upload-button{
+    display: none;
+}
+
+#card-baixar{
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 20px;
+    margin:0; 
+    width: 80%;
+}
+
+
+#baixa-lista{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#baixa-lista li::before{
+    content: none!important;
+    display: none !important; 
+
+}
+
+.baixa-listinha{
+        padding-left: 10px;
+}
