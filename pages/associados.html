@@ -5,17 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>APRI | Associados</title>
-    <link rel="stylesheet" href="style-ana.css">
-    <link rel="shortcut icon" href="/imagens/favicon.png" type="image/x-icon">
-    <script src="/scripts/site-header.js" defer></script>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style-ana.css">
     <link rel="shortcut icon" href="/imagens/favicon.png" type="image/x-icon">
     <script src="/scripts/site-header.js" defer></script>
 </head>
 <body>
-    <div class="fade-in">
-        <div id="site-header" data-cta-text="Entrar" data-cta-class="btn btn-primary" data-cta-id="apadrinhar"></div>
+     <div id="site-header" data-cta-text="Entrar" data-cta-class="btn2"></div>
 
     <section class="secao_vermelha">
         <h2 class="titulo1"><b>Associe-se à APRI</b></h2>
@@ -23,59 +20,58 @@
         <p class="texto1">Faça parte de uma comunidade voltada à preservação do patrimônio histórico, artístico e cultural de Itu.</p>
     </section>
 
-    <!-- O que é ser Associado -->
     <section id="secao-sobre-associado" class="secao_bege1">
-        <h2><b>O que é ser Associado</b></h2>
+        <h3><b>O que é ser Associado</b></h3>
         <hr class="linha">
         <div id="caixa_texto-associado" class="caixa_texto">
-            <p>A APRI promove atividades direcionadas para o desenvolvimento do patrimônio histórico, artístico e cultural de Itu...</p>
+            <p>A APRI é uma associação civil aberta à participação de pessoas interessadas na preservação do patrimônio histórico, artístico e cultural de Itu.</p>
+            <p>Ao se associar, você passa a integrar uma iniciativa voltada à valorização da memória, ao fortalecimento da identidade local e ao apoio a projetos de preservação cultural.</p>
+            <p>A associação é voluntária e sem fins lucrativos. Os associados participam das atividades institucionais e acompanham os projetos desenvolvidos pela APRI.</p>
         </div>
 
-        <!-- Três pilares/benefícios em formato de cards menores -->
         <section id="cards-beneficios-associado" class="cards">
             <div class="separacao-cards">
-                <div class="card-patrono">
+                <div class="card-associado card-patrono">
                     <div class="icone">
                         <i class="bi bi-people"></i>
                     </div>
-                    <h3><b class="b-patrono">Participar</b></h3>
+                    <h3><b class="b-patrono">Participe</b></h3>
                     <p>Participe ativamente de assembleias, reuniões e decisões.</p>
                 </div>
-                <div class="card-patrono">
+                <div class="card-associado card-patrono">
                     <div class="icone">
                         <i class="bi bi-book"></i>
                     </div>
-                    <h3><b class="b-patrono">Cursos</b></h3>
+                    <h3><b class="b-patrono">Contribua</b></h3>
                     <p>Acesso exclusivo a cursos e palestras de educação patrimonial.</p>
                 </div>
-                <div class="card-patrono">
+                <div class="card-associado card-patrono">
                     <div class="icone">
                         <i class="bi bi-award"></i>
                     </div>
-                    <h3><b class="b-patrono">Fortalecer</b></h3>
+                    <h3><b class="b-patrono">Fortaleça</b></h3>
                     <p>Ajude a manter viva a identidade e memória de Itu.</p>
                 </div>
             </div>
         </section>
     </section>
 
-    <!-- Como se Associar (Processo e Contribuição) -->
     <section id="secao-como-associar" class="secao_bege1">
         <h2><b>Como se Associar</b></h2>
         <hr class="linha">
 
         <div id="cards-processo-associar" class="cards">
-            <!-- Card 1: Processo de Associação -->
-            <div class="card-comoparticipar">
+
+            <div id="card-comoassoci" class="card-comoparticipar">
                 <div class="card-divisao">
                     <div class="texto-participa">
-                        <h3><b class="b-participa">Processo de Associação</b></h3>
-                        <div class="beneficios">
-                            <ul>
+                        <h2 id="participa-associ"><b class="b-participa">Processo de Associação</b></h3>
+                        <div class="beneficios processo-A">
+                            <ol id="lista-numerada">
                                 <li>O pedido de associação à APRI ocorre de forma digital, fornecendo os dados e preenchendo os pré-requisitos em um formulário digital.</li>
                                 <li>Os dados são recebidos pela diretoria que analisa no âmbito do Estatuto Social se o perfil se enquadra aos objetivos institucionais.</li>
                                 <li>Após aprovação pela diretoria, enviaremos os dados para pagamento da primeira taxa.</li>
-                            </ul>
+                            </ol>
                         </div>
                     </div>
                 </div>
@@ -86,14 +82,14 @@
                 </div>
             </div>
 
-            <!-- Card 2: Contribuição Financeira -->
-            <div class="card-comoparticipar fundo-branco">
-                <div class="card-divisao">
-                    <div class="texto-participa">
+
+            <div id="card-valorsimb" class="card-comoparticipar fundo-branco">
+                <div id="valorsimbolico" class="card-divisao">
+                    <div id="valorsimb-texto" class="texto-participa">
                         <h3><i class="bi bi-cash-coin icone-correto"></i><b class="b-participa">Contribuição Financeira</b></h3>
                         <p class="participa-texto-p">Como uma associação sem fins lucrativos, a APRI depende da taxa anual dos associados, paga semestralmente (maio e novembro).</p>
                     </div>
-                    <div class="beneficios">
+                    <div id="valor-simbolico" class="beneficios">
                         <p>Valor da taxa anual para 2026:</p>
                         <h2><b>R$ 60,00</b></h2>
                         <span class="participa-texto-p">(Semestral: R$ 30,00)</span>
